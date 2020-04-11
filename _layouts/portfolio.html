@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div class="page-content portfolio">
+  <section class="column image">
+    {% for image in page.images %}
+    <img src="{{ image | prepend: "assets/img/" | relative_url }}">
+    {% endfor %}
+  </section>
+  <section class="column text">
+    <p><a class="back-link" href="{{ page.cid | relative_url }}">&#8592; {{ page.cid }}</a></p>
+    {{ content }}
+  </section>
+</div>

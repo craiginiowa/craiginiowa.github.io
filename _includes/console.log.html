@@ -1,0 +1,7 @@
+<pre id="{{ include.id }}" style="display: none;">{{ include.content | jsonify | escape }}</pre>
+<script type="text/javascript">
+    (function () {
+        let vars = document.querySelectorAll('#{{ include.id }}');
+        console.log(JSON.parse(vars[vars.length - 1].textContent));
+    }())
+</script>

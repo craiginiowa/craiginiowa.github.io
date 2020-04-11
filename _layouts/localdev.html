@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    {%- include head.html links=page.links -%}
+    <body{% if page.bodyclass %} class="{{page.bodyclass}}"{% endif %}>
+        {%- include header.html -%}
+        <main class="page-wrapper">
+            {{ content }}
+            {%- include footer.html -%}
+        </main>
+        {% if page.scripts %}
+        {% for script in page.scripts %}
+        <script type="text/javascript" src={{ "/assets/js/" | append: script | relative_url }}></script>
+        {% endfor %}
+        {% endif %}
+    </body>
+</html>
