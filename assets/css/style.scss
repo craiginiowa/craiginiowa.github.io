@@ -1,29 +1,7 @@
 ---
 ---
-
 @import "mystyles";
 
-.home {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: center;
-    position: relative;
-    width: 100vw;
-}
+@media only screen and (min-width: 480px) {}
 
-.home::after {
-    background-image: url('/assets/img/calvin-and-hobbes.jpg');
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: contain;
-    bottom: 0;
-    content: '';
-    height: 80vh;
-    opacity: .2;
-    position: absolute;
-    right: 0;
-    width: 80vw;
-    z-index: -1;
-}
+@media only screen and (min-width: 768px) {}

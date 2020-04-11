@@ -4,24 +4,41 @@
 title: Craig Johnson
 email: craigjo@mchsi.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Craig Johnson is a developer for Gannett with a 20-years in the newspaper industry and a background as a copy editor and a graphic artist
 url: "http://craiginiowa.com"
+
+permalink: /blog/:categories/:year/:month/:day/:slug/
+date_format: "%b %-d, %Y"
 
 # Social
 twitter_username: craiginiowa
 github_username:  craiginiowa
 
-header_pages:
-- blog.md
-- about.md
-- variables.md
+# Collections
+collections:
+  developer:
+    output: true
+    cid: developer
+    permalink: /developer/:name/
+  graphics:
+    output: true
+    cid: graphics
+    permalink: /graphics/:name/
+  illustrations:
+    output: true
+    cid: illustrations
+    permalink: /illustrations/:name/
 
 # Build settings
 markdown: kramdown
 
+# Exclude from _site
+exclude: [design]
+
 # Plugins
 plugins:
- - jekyll-feed
- - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Github metadata
+github: [metadata]

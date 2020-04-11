@@ -3,23 +3,39 @@
 // Define defaults for each variable.
 
 $base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
-$base-font-size:   16px !default;
+$base-font-size:   18px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
-$background-color: #fdfdfd !default;
-$text-color:       #2c2c2c !default;
-$site-color:      #2a7ae2 !default;
+$spacing-lg:     30px !default;
+$spacing-med:    15px !default;
+$spacing-sm:      6px !default;
 
-$grey-color:       #828282 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
-$orange-color:     #f66a0a !default;
+$lato-font-family: "Lato", sans-serif;
+
+$background-color: #fdfdfd !default;
+
+$text-color:       #2c2c2c !default;
+$text-color-light: lighten($text-color, 50%);
+$text-color-dark: darken($text-color, 25%);
+
+$site-color:      #aa0000 !default;
+$site-color-light: lighten($site-color, 50%);
+$site-color-dark:  darken($site-color, 25%);
+
+$white-color:      #ffffff !default;
+$white-color-light: rgba($white-color, .5);
+
+$gray-color:       #828282 !default;
+$gray-color-light: lighten($gray-color, 40%) !default;
+$gray-color-dark:  darken($gray-color, 25%) !default;
+$red-color-dark:   #440000 !default;
+$red-color-light:  #aa0000 !default;
 $table-text-align: left !default;
 
 // Width of the content area
-$content-width:    800px !default;
+$content-width:    720px !default;
 
 // Media queries
 $on-tablet:        768px !default;

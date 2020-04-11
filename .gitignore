@@ -6,3 +6,6 @@ _site/
 
 # Ruby
 Gemfile.lock
+
+# Design
+design/
