@@ -4,6 +4,7 @@ description: A look at Des Moines metro area recycling
 layout: portfolio
 cid: graphics
 featured: false
+published: true
 images: [graphics/large/RecyclingGraphicDMR.jpg]
 thumbnail: graphics/small/RecyclingGraphicDMR.jpg
 tags: [Des Moines Register,illustrator]

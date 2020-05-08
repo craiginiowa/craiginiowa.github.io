@@ -4,6 +4,7 @@ description: Herald-Leader Derby section front illustration
 layout: portfolio
 cid: illustrations
 featured: true
+published: true
 images: [illustrations/large/KentuckyDerby.jpg]
 thumbnail: illustrations/small/KentuckyDerby.jpg
 tags: [Lexington Herald-Leader,illustrator]

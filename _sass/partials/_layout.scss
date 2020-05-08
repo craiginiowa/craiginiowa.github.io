@@ -9,7 +9,7 @@
     display: flex;
     font-size: 18px;
     height: 56px;
-    margin: 0 $spacing-lg;
+    margin: 0 20px;
   }
 
   .site-logo-text {
@@ -116,21 +116,28 @@
 
 .page-wrapper {
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   height: calc(100% - 56px);
+  justify-content: space-between;
   overflow-y: auto;
-  padding: 50px 30px 0;
+  padding: 50px 20px 0;
   position: relative;
   width: 100%;
   z-index: 1;
 }
 
 .page-content {
-  box-sizing: border-box;
-  min-height: 100%;
   margin: 0;
 
   h3 {
     margin: 1.5em 0 .5em;
+  }
+
+  p {
+    img {
+      width: 100%;
+    }
   }
 
   .back-link {
@@ -148,17 +155,19 @@
   }
 
   &.portfolio {
-    box-sizing: border-box;
-    min-height: 100%;
-    margin: 0;
-
     .column {
-      &.image {
+      &.content {
         margin-bottom: 30px;
         text-align: center;
 
         img {
           max-width: 100%;
+        }
+
+        iframe {
+          border: none;
+          height: 100%;
+          width: 100%;
         }
       }
     }
@@ -166,6 +175,25 @@
 
   &.blog-post {
     margin-top: 50px;
+  }
+
+  &.project {
+    height: 100%;
+    padding: 0;
+    position: relative;
+  }
+
+  .ex {
+    margin: 1.5em 0;
+    width: 100%;
+  }
+}
+
+.post-content {
+  iframe {
+    border: 1px solid #ccc;
+    height: 350px;
+    width: 100%;
   }
 }
 
@@ -253,8 +281,8 @@
   }
 
   p {
-    font-size: $base-font-size;
-    line-height: $base-line-height;
+    font-size: 17px;
+    line-height: 1.35;
   }
 
   time {
@@ -297,6 +325,10 @@
 figure {
   display: table;
 
+  &.image {
+    margin: 2em auto;
+  }
+
   &.right-rail {
     @extend %clearfix;
     float: right;
@@ -313,7 +345,8 @@ figure {
     caption-side: bottom;
     color: $gray-color-dark;
     display: table-caption;
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: bold;
 
     b {
       margin-left: 6px;
@@ -586,7 +619,7 @@ figure {
           margin-right: $spacing-lg;
         }
 
-        &.image {
+        &.content {
           flex-basis: 75%;
           text-align: center;
 
@@ -595,6 +628,15 @@ figure {
             max-width: 100%;
           }
         }
+      }
+    }
+
+    &.code {
+      height: 100%;
+      padding: 0;
+
+      .column.content {
+        margin-bottom: 0;
       }
     }
   }
@@ -703,7 +745,6 @@ figure {
   }
 
   .site-footer {
-    margin: -58px 0 0;
 
     h5 {
       font-size: 16px;
@@ -728,6 +769,11 @@ figure {
 
     h3 {
       font-size: 30px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
     }
 
     &.preview {

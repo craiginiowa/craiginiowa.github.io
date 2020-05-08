@@ -4,6 +4,7 @@ description: Graphic showing detail of Des Moines Public Libarary windows
 layout: portfolio
 cid: graphics
 featured: true
+published: true
 images: [graphics/large/LibraryWindows.jpg]
 thumbnail: graphics/small/LibraryWindows.jpg
 tags: [Des Moines Register,3D]

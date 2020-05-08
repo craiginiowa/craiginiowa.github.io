@@ -4,6 +4,7 @@ description: 3-D illustration of an IndyCar racing car
 layout: portfolio
 cid: graphics
 featured: true
+published: true
 images: [graphics/large/IndyCarAnatomy.jpg]
 thumbnail: graphics/small/IndyCarAnatomy.jpg
 tags: [Des Moines Register,3D]

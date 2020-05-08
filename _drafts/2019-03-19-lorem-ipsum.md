@@ -25,10 +25,10 @@ Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliqui
 {% raw %}
 ```html
 <div class="post-image">
-    <img src="{{ page.image.url | relative_url }}">
-    {% if page.image.caption %}
-    <p>{{ page.image.caption }}{% if page.image.credit %}<b>{{ page.image.credit }}</b>{% endif %}</p>
-    {% endif %}
+  <img src="{{ page.image.url | relative_url }}">
+  {% if page.image.caption %}
+  <p>{{ page.image.caption }}{% if page.image.credit %}<b>{{ page.image.credit }}</b>{% endif %}</p>
+  {% endif %}
 </div>
 ```
 {% endraw %}

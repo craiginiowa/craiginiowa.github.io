@@ -4,6 +4,7 @@ description: 3-D illustration of an open wheel Indy-style racing car
 layout: portfolio
 cid: illustrations
 featured: false
+published: true
 images: [illustrations/large/IndyCar.jpg]
 thumbnail: illustrations/small/IndyCar.jpg
 tags: [3D,Des Moines Register]

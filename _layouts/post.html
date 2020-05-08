@@ -12,7 +12,11 @@ layout: default
     {% endif %}
 </figure>
     {% endif %}
+            {% if page.headline %}
+            <h1 class="post-title" itemprop="name headline">{{ page.headline | escape }}</h1>
+            {% else %}
             <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+            {% endif %}
             <p class="post-meta">
                 <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
                     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}

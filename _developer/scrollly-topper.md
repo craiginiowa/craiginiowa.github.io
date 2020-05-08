@@ -4,6 +4,7 @@ description: Scrolling slideshow story topper.
 layout: portfolio
 cid: developer
 featured: true
+published: true
 images: [developer/large/scrolly-topper.jpg]
 thumbnail: developer/small/scrolly-topper.jpg
 link: https://www.courier-journal.com/in-depth/news/2019/09/04/rachael-denhollander-sacrifice-continues-after-accusing-usa-gymnastics-larry-nassar/1919109001/

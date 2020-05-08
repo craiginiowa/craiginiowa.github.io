@@ -8,6 +8,11 @@
     {{ content }}
     {%- include footer.html -%}
   </main>
+  {%- if page.scripts -%}
+    {% for script in page.scripts %}
+    <script type="text/javascript" src="{{ "/assets/js/" | append: script | relative_url }}"></script>
+    {% endfor %}
+  {%- endif -%}
 </body>
 
 </html>

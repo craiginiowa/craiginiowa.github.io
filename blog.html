@@ -15,7 +15,7 @@ bodyclass: blog
     <li class="post">
         <span class="post-meta">{{ post.date | date: site.date_format }}</span>
         <a href="{{ post.url | relative_url }}">
-            <h3>{{ post.title | escape }}</h3>
+            <h2>{{ post.title | escape }}</h2>
         </a>
         {{ post.excerpt }}
         <a class="read-more right-caret" href="{{ post.url | relative_url }}">READ MORE</a>
