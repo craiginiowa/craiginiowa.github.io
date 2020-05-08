@@ -4,6 +4,7 @@ description: Pencil drawings of various animals
 layout: portfolio
 cid: illustrations
 featured: false
+published: true
 images: [illustrations/large/animals.jpg]
 thumbnail: illustrations/small/animals.jpg
 tag: [pencil,Lexington Herald-Leader]

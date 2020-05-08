@@ -4,6 +4,7 @@ description: 3-D illustrations for the opening of the Des Moines arena
 layout: portfolio
 cid: illustrations
 featured: true
+published: true
 images: [illustrations/large/WellsFargoArena.jpg,illustrations/large/WellsFargoArenaSuite.jpg]
 thumbnail: illustrations/small/WellsFargoArena.jpg
 tags: [Des Moines Register,3D,architectural]

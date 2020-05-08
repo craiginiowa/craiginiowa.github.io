@@ -4,6 +4,7 @@ description: Graphic diagramming the steps in ethanol production
 layout: portfolio
 cid: graphics
 featured: true
+published: true
 images: [graphics/large/HowEthanolIsMade.jpg]
 thumbnail: graphics/small/HowEthanolIsMade.jpg
 link: http://optional.link.com

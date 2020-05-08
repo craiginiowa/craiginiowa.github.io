@@ -4,6 +4,7 @@ description: Illustration accompanying a Valentines Day story
 layout: portfolio
 cid: illustrations
 featured: true
+published: true
 images: [illustrations/large/campus-love.jpg]
 thumbnail: illustrations/small/campus-love.jpg
 tags: [pencil,Lexington Herald-Leader]

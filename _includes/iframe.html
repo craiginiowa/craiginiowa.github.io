@@ -1,0 +1,6 @@
+{% assign local = include.url | slice: 0, 4 %}
+{% if  local == "http" %}
+<iframe src="{{ include.url }}"{% if include.height %} style="height: {{include.height}}"{% endif %}></iframe>
+{% else %}
+<iframe src="{{ include.url | prepend: 'assets/code/' | relative_url }}"{% if include.height %} style="height: {{include.height}}"{% endif %}></iframe>
+{% endif %}

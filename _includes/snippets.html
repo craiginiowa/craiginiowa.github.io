@@ -1,0 +1,13 @@
+<div class="ex">
+
+  {% if include.name == "html-snippet-1" %}
+  <div class="html-snippet-1"></div>
+
+  {% elsif include.name == "html-snippet-2" %}
+  <div class="html-snippet-2"></div>
+
+  {% else %}
+  <div{% if include.id %} id="{{ include.id }}"{% endif %}{% if include.class %} class="{{ include.class }}"{% endif %}></div>
+
+  {% endif %}
+</div>

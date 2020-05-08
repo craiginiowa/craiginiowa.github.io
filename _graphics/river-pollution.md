@@ -4,6 +4,7 @@ description: An illustrated look at source of pollution in Iowa rivers
 layout: portfolio
 cid: graphics
 featured: false
+published: true
 images: [graphics/large/RiverPollution.jpg]
 thumbnail: graphics/small/RiverPollution.jpg
 tags: [Des Moines Register,3D]

@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: 15px;
+  margin-bottom: 1.5em;
 }
 
 header {
@@ -53,13 +53,13 @@ ul, ol {
 }
 
 a {
-  color: $text-color-light;
+  color: $site-color;
   text-decoration: none;
-  transition: opacity .2s;
+  transition: color .2s;
 
   &:hover {
     cursor: pointer;
-    color: $text-color;
+    color: $site-color-dark;
     text-decoration: none;
   }
 }
@@ -68,10 +68,11 @@ a {
 
 pre,
 code {
-  @include relative-font-size(0.9375);
   border: 1px solid $gray-color-light;
   border-radius: 3px;
   background-color: #eef;
+  font-family: Menlo, Monaco, monospace;
+  font-size: 15px;
 }
 
 code {

@@ -4,6 +4,7 @@ description: New recycling trucks for Lexington, Ky.
 layout: portfolio
 cid: graphics
 featured: false
+published: true
 images: [graphics/large/RecyclingGraphicHL.jpg]
 thumbnail: graphics/small/RecyclingGraphicHL.jpg
 tags: [Lexington Herald-Leader,illustrator]

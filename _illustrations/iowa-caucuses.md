@@ -4,6 +4,7 @@ description: The differences between Democratic and Republican caucuses
 layout: portfolio
 cid: illustrations
 featured: false
+published: true
 images: [illustrations/large/CaucusesDemocrats.jpg,illustrations/large/CaucusesRepublicans.jpg]
 thumbnail: illustrations/small/CaucusesDemocrats.jpg
 tags: [Des Moines Register,3D]

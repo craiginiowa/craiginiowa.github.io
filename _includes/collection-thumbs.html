@@ -4,9 +4,9 @@
     {% endif %}
     <div class="thumbnails-grid">
         {% if include.featured %}
-            {% assign collection = include.collection | where: "featured", "true" | sort: "title" | slice: 0, 4 %}
+            {% assign collection = include.collection | where: "featured", "true" | where: "published", "true" | sort: "title" | slice: 0, 4 %}
         {% else %}
-            {% assign collection = include.collection | sort: "title" %}
+            {% assign collection = include.collection | where: "published", "true" | sort: "title" %}
         {% endif %}
 
         {% for item in collection %}

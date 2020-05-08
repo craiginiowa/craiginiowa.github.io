@@ -4,6 +4,7 @@ description: An inside look at a modern wind turbine
 layout: portfolio
 cid: graphics
 featured: false
+published: true
 images: [graphics/large/WindTurbine.jpg]
 thumbnail: graphics/small/WindTurbine.jpg
 tags: [Des Moines Register,3D]

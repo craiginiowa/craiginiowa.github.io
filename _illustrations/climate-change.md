@@ -4,6 +4,7 @@ description: A bunch of climage change hot spots in one illustration
 layout: portfolio
 cid: illustrations
 featured: false
+published: true
 images: [illustrations/large/ClimateChange.jpg]
 thumbnail: illustrations/small/ClimateChange.jpg
 tags: [3D,Des Moines Register]

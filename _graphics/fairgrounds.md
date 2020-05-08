@@ -4,6 +4,7 @@ description: 3-D illustration of Iowa State Fair fairgrounds
 layout: portfolio
 cid: graphics
 featured: true
+published: true
 images: [graphics/large/IowaStateFairgrounds2007.jpg,graphics/large/IowaStateFairgrounds2019.jpg]
 thumbnail: graphics/small/IowaStateFairgrounds2007.jpg
 link: https://www.iowastatefair.org/upl/downloads/library/fairgrounds-map.pdf

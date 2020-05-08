@@ -4,6 +4,7 @@ description: The home field of the Lexington Legends minor league baseball team
 layout: portfolio
 cid: illustrations
 featured: true
+published: true
 images: [illustrations/large/applebee_park.jpg]
 thumbnail: illustrations/small/applebee_park.jpg
 tags: [3D,architectural,Lexington Herald-Leader]
