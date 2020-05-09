@@ -16,14 +16,14 @@ From a usability standpoint, the problem with this is — not to get too technic
 
 {% include image.html url="assets/img/examples/usmap.jpg" %}
 
-### Enter the tile map.
+### Enter the tile map
 
 Tile maps represent the states as some regular geometric shape of equal size, typically squares, but I've also seen hexagons. For our purposes here, I'm going to use squares, because they're easy to build using nothing more than css.
 
 _**Full disclosure:** You can find better blog posts about the whys of tile maps. I'm mostly writing this to work out the kinks of including example code in a blog post. I built this site using [Jekyll](https://jekyllrb.com/){:target="_blank"}, hosted on [GitHub pages](https://pages.github.com/){:target="_blank"}, and a site theme built almost from scratch — I used [minima](https://github.com/jekyll/minima){:target="_blank"} as a starting point. Maybe someday I'll do a full blog post about that experience, but for now, I'm keeping it simple._
 
 
-But I digress. A square-tile map is simple to do using nothing more than CSS grid. I've used it in a couple of places, most recently on [this page](https://www.usatoday.com/storytelling/distancedance/){:target="_blank"} promoting the #DistanceDance movement on social media.
+But I digress. A square-tile map is simple to do using nothing more than CSS grid. I've used it in a couple of places, most recently on [this page](https://www.usatoday.com/storytelling/distancedance/){:target="_blank"} promoting the #DistanceDance movement on social media and [this one](https://www.usatoday.com/storytelling/coronavirus-reopening-america-map/) tracking the status of states' coronavirus restrictions. They both look like this, more or less.
 
 {% include image.html url="assets/img/examples/distance-dance.jpg" %}
 
@@ -45,7 +45,7 @@ As I said, I built this map using nothing more than html and CSS. It's a 12-by-9
 </div>
 ```
 
-The `grid-container` forms the grid using `display: grid`, like so:
+The container div uses CSS grid layout, like so:
 
 ```css
 .grid-container {
@@ -87,12 +87,12 @@ Not exactly what we wanted. We want square states, and it would be nice to make 
 
 {% include snippets.html class="css-grid-map grid-container square" id="map-2" %}
 
-Better. Now to give it the general shape of the United States. The key to this is the `grid-column-start` property. Take a look at the square for "ME", or Maine. As the second item in the grid container, it falls in the second column. But we want it positioned in the 12th column. As you might have guessed, setting the `grid-column-start` property to `12` on that element will push it to that column, like so:
+Better. Now to give it the general shape of the United States. The key to this is the `grid-column-start` property. Take a look at the square for "ME", or Maine. As the second item in the grid container, it falls in the second column. But we want it positioned in the 12th column. As the name implies, setting the `grid-column-start` property to 12 on that element will push it to that column:
 
 
 {% include snippets.html class="css-grid-map grid-container square" id="map-3" %}
 
-Now we have Maine properly positioned. The rest of the states resume their natural flow after that. To finish up, it's simply a matter of setting `grid-column-start` on the right states.
+Moving Maine to the 12th column pushes Vermont to the first column in the next row, but we want it in the 11th row, so that's the next target for `grid-column-start`. _That_ pushes Washington to the first column in the next row; we want it in the second column. And so on and so on. Setting `grid-column-start` on the appropriate states forces them into the rough shape we want.
 
 ```css
 #ME {
@@ -121,8 +121,6 @@ Now we have Maine properly positioned. The rest of the states resume their natur
 }
 ```
 
-This is starting to look like a map.
-
 {% include snippets.html class="css-grid-map grid-container square adjusted" id="map-4" %}
 
 Almost done. If you look at Puerto Rico on the #DistanceDance example above, it's pushed down another row. As we can change which column a state appears in with `grid-column-start`, we can change the row with `grid-row-start`.
@@ -138,6 +136,6 @@ Almost done. If you look at Puerto Rico on the #DistanceDance example above, it'
 
 ### Finishing up
 
-Everything that comes after this is standard web development stuff: adding click listeners, styling individual states to reflect data, etc. Of course, you could change the order of the states. If you search for "tile grid u.s. map" on Google, you'll see many variations of this map with many differnt orders of states, paticularly in the northeast region of the map where states are small and don't easily translate to a grid. I chose my order giving greater weight to a state's neighbor to the east or west as opposed to north and south. You might think the reverse makes more sense.
+Everything that comes after this is standard web development stuff: adding click listeners, styling individual states to reflect data, etc. Of course, you could change the order of the states. If you search for "tile grid u.s. map" on Google, you'll see many variations of this map with many different orders of states, paticularly in the northeast region of the map where states are small and don't easily translate to a grid. I chose my order giving greater weight to a state's neighbor to the east or west as opposed to north and south. You might think the reverse makes more sense.
 
 But that's really about it. I hope you learned a little something. _(Just as I learned how to include code examples in a blog post.)_ Happy coding.
