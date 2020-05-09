@@ -285,10 +285,6 @@
     line-height: 1.35;
   }
 
-  time {
-    font-size: 14px;
-  }
-
   .post-image {
     img {
       width: 100%;
@@ -315,11 +311,15 @@
   &.preview {
     margin-bottom: 30px;
   }
-}
 
   .post-meta {
-  font-size: $small-font-size;
-  color: $gray-color;
+    font-size: $small-font-size;
+    color: $gray-color;
+
+    .post-meta-bullet {
+      margin-right: 4px;
+    }
+  }
 }
 
 figure {

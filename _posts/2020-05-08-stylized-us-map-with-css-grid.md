@@ -2,7 +2,7 @@
 layout: post
 title: Tiled U.S. map with CSS grid
 slug: tiled-us-map-with-css-grid
-author: Craig Johnosn
+author: Craig Johnson
 _date: 2020-05-08 12:25:00 -0600
 categories: dev
 pinned: false
@@ -138,4 +138,4 @@ Almost done. If you look at Puerto Rico on the #DistanceDance example above, it'
 
 Everything that comes after this is standard web development stuff: adding click listeners, styling individual states to reflect data, etc. Of course, you could change the order of the states. If you search for "tile grid u.s. map" on Google, you'll see many variations of this map with many different orders of states, paticularly in the northeast region of the map where states are small and don't easily translate to a grid. I chose my order giving greater weight to a state's neighbor to the east or west as opposed to north and south. You might think the reverse makes more sense.
 
-But that's really about it. I hope you learned a little something. _(Just as I learned how to include code examples in a blog post.)_ Happy coding.
+That's really about it. I hope you learned a little something. _(Just as I learned how to include code examples in a blog post.)_ Happy coding.
