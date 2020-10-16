@@ -13,6 +13,10 @@ scripts: [examples/animated-site-logo/bundle.js]
 ---
 In May of 2020, I built an animated SVG logo for USA Today's [Rebuilding America](https://www.usatoday.com/rebuilding-america/){:target="_blank"} front. It was my idea to do something more than just a boring old static image because I'd been impressed with the motion graphics applied to the very same logo in a video announcing the project.
 
+<div class="ex">
+  <div class="rebuilding-america"></div>
+</div>
+
 Breathing a little life into the logo, or giving it a little "zazzle" as my development team likes to say, turned out to be surprisingly easy thanks to Svelte, the javascript framework created by Rich Harris, a graphics developer at the New York Times. Svelte has an out-of-the-box transition library that makes fades and slides and progressions a snap. Custom transitions are a breeze to write, as well.
 
 It was such an enjoyable experience that I thought I'd "zazzle" up my own logo. Here's the boring version.
