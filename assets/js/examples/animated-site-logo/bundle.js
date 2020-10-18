@@ -1440,20 +1440,20 @@
 
     function get_each_context$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[14] = list[i];
-    	child_ctx[16] = i;
+    	child_ctx[12] = list[i];
+    	child_ctx[14] = i;
     	return child_ctx;
     }
 
     function get_each_context_1$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[17] = list[i];
-    	child_ctx[16] = i;
+    	child_ctx[15] = list[i];
+    	child_ctx[14] = i;
     	return child_ctx;
     }
 
-    // (5:0) {#if animateAll}
-    function create_if_block_6(ctx) {
+    // (4:0) {#if animateAll}
+    function create_if_block_7(ctx) {
     	let div;
 
     	const block = {
@@ -1461,7 +1461,7 @@
     			div = element("div");
     			attr_dev(div, "class", "animated-border svelte-1qwba9b");
     			toggle_class(div, "visible", /*visible*/ ctx[3]);
-    			add_location(div, file$1, 5, 2, 90);
+    			add_location(div, file$1, 4, 2, 73);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -1478,24 +1478,24 @@
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_6.name,
+    		id: create_if_block_7.name,
     		type: "if",
-    		source: "(5:0) {#if animateAll}",
+    		source: "(4:0) {#if animateAll}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (8:0) {#if visible}
-    function create_if_block$1(ctx) {
+    // (7:0) {#if visible}
+    function create_if_block_1$1(ctx) {
     	let current_block_type_index;
     	let if_block;
     	let t;
     	let div;
     	let svg;
     	let current;
-    	const if_block_creators = [create_if_block_3$1, create_else_block_2];
+    	const if_block_creators = [create_if_block_4$1, create_else_block_2];
     	const if_blocks = [];
 
     	function select_block_type(ctx, dirty) {
@@ -1505,7 +1505,7 @@
 
     	current_block_type_index = select_block_type(ctx);
     	if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
-    	let each_value = /*paths*/ ctx[7];
+    	let each_value = /*paths*/ ctx[6];
     	validate_each_argument(each_value);
     	let each_blocks = [];
 
@@ -1525,15 +1525,11 @@
     			}
 
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
-    			attr_dev(svg, "x", "0px");
-    			attr_dev(svg, "y", "0px");
-    			attr_dev(svg, "height", "85.109px");
-    			attr_dev(svg, "width", "141.512px");
     			attr_dev(svg, "viewBox", "-2 -1 143.512 87.109");
     			attr_dev(svg, "class", "svelte-1qwba9b");
-    			add_location(svg, file$1, 30, 4, 913);
+    			add_location(svg, file$1, 29, 4, 896);
     			attr_dev(div, "class", "craiginiowa-logo svelte-1qwba9b");
-    			add_location(div, file$1, 29, 2, 878);
+    			add_location(div, file$1, 28, 2, 861);
     		},
     		m: function mount(target, anchor) {
     			if_blocks[current_block_type_index].m(target, anchor);
@@ -1572,8 +1568,8 @@
     				if_block.m(t.parentNode, t);
     			}
 
-    			if (dirty & /*paths, done*/ 144) {
-    				each_value = /*paths*/ ctx[7];
+    			if (dirty & /*paths, done*/ 80) {
+    				each_value = /*paths*/ ctx[6];
     				validate_each_argument(each_value);
     				let i;
 
@@ -1622,16 +1618,16 @@
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block$1.name,
+    		id: create_if_block_1$1.name,
     		type: "if",
-    		source: "(8:0) {#if visible}",
+    		source: "(7:0) {#if visible}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (23:2) {:else}
+    // (22:2) {:else}
     function create_else_block_2(ctx) {
     	let div;
     	let t0;
@@ -1655,11 +1651,11 @@
     			t2 = text("copy editor • other");
     			br2 = element("br");
     			t3 = text("assorted activities");
-    			add_location(br0, file$1, 26, 28, 771);
-    			add_location(br1, file$1, 26, 64, 807);
-    			add_location(br2, file$1, 26, 92, 835);
+    			add_location(br0, file$1, 25, 28, 754);
+    			add_location(br1, file$1, 25, 64, 790);
+    			add_location(br2, file$1, 25, 92, 818);
     			attr_dev(div, "class", "skills-cloud");
-    			add_location(div, file$1, 23, 2, 643);
+    			add_location(div, file$1, 22, 2, 626);
     		},
     		m: function mount(target, anchor, remount) {
     			insert_dev(target, div, anchor);
@@ -1672,7 +1668,7 @@
     			append_dev(div, t3);
     			current = true;
     			if (remount) dispose();
-    			dispose = listen_dev(div, "outroend", /*outroend_handler_1*/ ctx[11], false, false, false);
+    			dispose = listen_dev(div, "outroend", /*outroend_handler_1*/ ctx[9], false, false, false);
     		},
     		p: noop,
     		i: function intro(local) {
@@ -1695,15 +1691,15 @@
     		block,
     		id: create_else_block_2.name,
     		type: "else",
-    		source: "(23:2) {:else}",
+    		source: "(22:2) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (9:2) {#if animateCloud || animateAll}
-    function create_if_block_3$1(ctx) {
+    // (8:2) {#if animateCloud || animateAll}
+    function create_if_block_4$1(ctx) {
     	let div;
     	let div_outro;
     	let current;
@@ -1725,7 +1721,7 @@
     			}
 
     			attr_dev(div, "class", "skills-cloud");
-    			add_location(div, file$1, 9, 2, 197);
+    			add_location(div, file$1, 8, 2, 180);
     		},
     		m: function mount(target, anchor, remount) {
     			insert_dev(target, div, anchor);
@@ -1736,7 +1732,7 @@
 
     			current = true;
     			if (remount) dispose();
-    			dispose = listen_dev(div, "outroend", /*outroend_handler*/ ctx[10], false, false, false);
+    			dispose = listen_dev(div, "outroend", /*outroend_handler*/ ctx[8], false, false, false);
     		},
     		p: function update(ctx, dirty) {
     			if (dirty & /*wordCloud*/ 0) {
@@ -1789,19 +1785,19 @@
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_3$1.name,
+    		id: create_if_block_4$1.name,
     		type: "if",
-    		source: "(9:2) {#if animateCloud || animateAll}",
+    		source: "(8:2) {#if animateCloud || animateAll}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (18:4) {:else}
+    // (17:4) {:else}
     function create_else_block_1$1(ctx) {
     	let span;
-    	let t_value = /*letter*/ ctx[17] + "";
+    	let t_value = /*letter*/ ctx[15] + "";
     	let t;
     	let span_intro;
 
@@ -1809,7 +1805,7 @@
     		c: function create() {
     			span = element("span");
     			t = text(t_value);
-    			add_location(span, file$1, 18, 4, 510);
+    			add_location(span, file$1, 17, 4, 493);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -1838,21 +1834,21 @@
     		block,
     		id: create_else_block_1$1.name,
     		type: "else",
-    		source: "(18:4) {:else}",
+    		source: "(17:4) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (16:28) 
-    function create_if_block_5(ctx) {
+    // (15:28) 
+    function create_if_block_6(ctx) {
     	let br;
 
     	const block = {
     		c: function create() {
     			br = element("br");
-    			add_location(br, file$1, 16, 4, 489);
+    			add_location(br, file$1, 15, 4, 472);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, br, anchor);
@@ -1867,17 +1863,17 @@
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_5.name,
+    		id: create_if_block_6.name,
     		type: "if",
-    		source: "(16:28) ",
+    		source: "(15:28) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (14:4) {#if letter == "•"}
-    function create_if_block_4$1(ctx) {
+    // (13:4) {#if letter == "•"}
+    function create_if_block_5(ctx) {
     	let span;
     	let span_intro;
 
@@ -1885,7 +1881,7 @@
     		c: function create() {
     			span = element("span");
     			span.textContent = "•";
-    			add_location(span, file$1, 14, 4, 370);
+    			add_location(span, file$1, 13, 4, 353);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -1911,22 +1907,22 @@
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_4$1.name,
+    		id: create_if_block_5.name,
     		type: "if",
-    		source: "(14:4) {#if letter == \\\"•\\\"}",
+    		source: "(13:4) {#if letter == \\\"•\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (13:4) {#each wordCloud.split("") as letter, i}
+    // (12:4) {#each wordCloud.split("") as letter, i}
     function create_each_block_1$1(ctx) {
     	let if_block_anchor;
 
     	function select_block_type_1(ctx, dirty) {
-    		if (/*letter*/ ctx[17] == "•") return create_if_block_4$1;
-    		if (/*letter*/ ctx[17] == "/") return create_if_block_5;
+    		if (/*letter*/ ctx[15] == "•") return create_if_block_5;
+    		if (/*letter*/ ctx[15] == "/") return create_if_block_6;
     		return create_else_block_1$1;
     	}
 
@@ -1959,14 +1955,14 @@
     		block,
     		id: create_each_block_1$1.name,
     		type: "each",
-    		source: "(13:4) {#each wordCloud.split(\\\"\\\") as letter, i}",
+    		source: "(12:4) {#each wordCloud.split(\\\"\\\") as letter, i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (42:6) {:else}
+    // (37:6) {:else}
     function create_else_block$1(ctx) {
     	let path;
     	let path_d_value;
@@ -1975,9 +1971,9 @@
     	const block = {
     		c: function create() {
     			path = svg_element("path");
-    			attr_dev(path, "d", path_d_value = /*path*/ ctx[14]);
+    			attr_dev(path, "d", path_d_value = /*path*/ ctx[12]);
     			attr_dev(path, "class", "svelte-1qwba9b");
-    			add_location(path, file$1, 42, 6, 1357);
+    			add_location(path, file$1, 37, 6, 1264);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, path, anchor);
@@ -1987,7 +1983,7 @@
     			if (!path_intro) {
     				add_render_callback(() => {
     					path_intro = create_in_transition(path, draw, {
-    						delay: /*i*/ ctx[16] * 200,
+    						delay: /*i*/ ctx[14] * 200,
     						duration: 1000
     					});
 
@@ -2005,15 +2001,15 @@
     		block,
     		id: create_else_block$1.name,
     		type: "else",
-    		source: "(42:6) {:else}",
+    		source: "(37:6) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (40:24) 
-    function create_if_block_2$1(ctx) {
+    // (35:24) 
+    function create_if_block_3$1(ctx) {
     	let path;
     	let path_d_value;
     	let path_intro;
@@ -2022,14 +2018,14 @@
     	const block = {
     		c: function create() {
     			path = svg_element("path");
-    			attr_dev(path, "d", path_d_value = /*path*/ ctx[14]);
+    			attr_dev(path, "d", path_d_value = /*path*/ ctx[12]);
     			attr_dev(path, "class", "svelte-1qwba9b");
-    			add_location(path, file$1, 40, 6, 1242);
+    			add_location(path, file$1, 35, 6, 1149);
     		},
     		m: function mount(target, anchor, remount) {
     			insert_dev(target, path, anchor);
     			if (remount) dispose();
-    			dispose = listen_dev(path, "introend", /*introend_handler*/ ctx[12], false, false, false);
+    			dispose = listen_dev(path, "introend", /*introend_handler*/ ctx[10], false, false, false);
     		},
     		p: noop,
     		i: function intro(local) {
@@ -2049,17 +2045,17 @@
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_2$1.name,
+    		id: create_if_block_3$1.name,
     		type: "if",
-    		source: "(40:24) ",
+    		source: "(35:24) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (38:6) {#if i == 5 || i == 6}
-    function create_if_block_1$1(ctx) {
+    // (33:6) {#if i == 5 || i == 6}
+    function create_if_block_2$1(ctx) {
     	let path;
     	let path_d_value;
     	let path_intro;
@@ -2068,9 +2064,9 @@
     		c: function create() {
     			path = svg_element("path");
     			attr_dev(path, "opacity", "0.5");
-    			attr_dev(path, "d", path_d_value = /*path*/ ctx[14]);
+    			attr_dev(path, "d", path_d_value = /*path*/ ctx[12]);
     			attr_dev(path, "class", "svelte-1qwba9b");
-    			add_location(path, file$1, 38, 6, 1133);
+    			add_location(path, file$1, 33, 6, 1040);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, path, anchor);
@@ -2080,7 +2076,7 @@
     			if (!path_intro) {
     				add_render_callback(() => {
     					path_intro = create_in_transition(path, draw, {
-    						delay: /*i*/ ctx[16] * 200,
+    						delay: /*i*/ ctx[14] * 200,
     						duration: 1000
     					});
 
@@ -2096,22 +2092,22 @@
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_1$1.name,
+    		id: create_if_block_2$1.name,
     		type: "if",
-    		source: "(38:6) {#if i == 5 || i == 6}",
+    		source: "(33:6) {#if i == 5 || i == 6}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (37:6) {#each paths as path, i}
+    // (32:6) {#each paths as path, i}
     function create_each_block$1(ctx) {
     	let if_block_anchor;
 
     	function select_block_type_2(ctx, dirty) {
-    		if (/*i*/ ctx[16] == 5 || /*i*/ ctx[16] == 6) return create_if_block_1$1;
-    		if (/*i*/ ctx[16] == 10) return create_if_block_2$1;
+    		if (/*i*/ ctx[14] == 5 || /*i*/ ctx[14] == 6) return create_if_block_2$1;
+    		if (/*i*/ ctx[14] == 10) return create_if_block_3$1;
     		return create_else_block$1;
     	}
 
@@ -2144,7 +2140,55 @@
     		block,
     		id: create_each_block$1.name,
     		type: "each",
-    		source: "(37:6) {#each paths as path, i}",
+    		source: "(32:6) {#each paths as path, i}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (46:2) {#if done}
+    function create_if_block$1(ctx) {
+    	let button;
+    	let t;
+    	let button_intro;
+    	let dispose;
+
+    	const block = {
+    		c: function create() {
+    			button = element("button");
+    			t = text(/*buttonName*/ ctx[5]);
+    			add_location(button, file$1, 46, 2, 1433);
+    		},
+    		m: function mount(target, anchor, remount) {
+    			insert_dev(target, button, anchor);
+    			append_dev(button, t);
+    			if (remount) dispose();
+    			dispose = listen_dev(button, "click", /*replay*/ ctx[7], false, false, false);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*buttonName*/ 32) set_data_dev(t, /*buttonName*/ ctx[5]);
+    		},
+    		i: function intro(local) {
+    			if (!button_intro) {
+    				add_render_callback(() => {
+    					button_intro = create_in_transition(button, fade, { delay: 3000 });
+    					button_intro.start();
+    				});
+    			}
+    		},
+    		o: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(button);
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block$1.name,
+    		type: "if",
+    		source: "(46:2) {#if done}",
     		ctx
     	});
 
@@ -2156,13 +2200,10 @@
     	let t0;
     	let t1;
     	let div1;
-    	let label;
-    	let button;
-    	let t2;
     	let current;
-    	let dispose;
-    	let if_block0 = /*animateAll*/ ctx[2] && create_if_block_6(ctx);
-    	let if_block1 = /*visible*/ ctx[3] && create_if_block$1(ctx);
+    	let if_block0 = /*animateAll*/ ctx[2] && create_if_block_7(ctx);
+    	let if_block1 = /*visible*/ ctx[3] && create_if_block_1$1(ctx);
+    	let if_block2 = /*done*/ ctx[4] && create_if_block$1(ctx);
 
     	const block = {
     		c: function create() {
@@ -2172,42 +2213,33 @@
     			if (if_block1) if_block1.c();
     			t1 = space();
     			div1 = element("div");
-    			label = element("label");
-    			button = element("button");
-    			t2 = text(/*buttonName*/ ctx[6]);
+    			if (if_block2) if_block2.c();
     			attr_dev(div0, "class", "billboard svelte-1qwba9b");
     			toggle_class(div0, "done", /*done*/ ctx[4]);
-    			toggle_class(div0, "expanded", /*expanded*/ ctx[5]);
     			add_location(div0, file$1, 0, 0, 0);
-    			add_location(button, file$1, 51, 4, 1525);
-    			add_location(label, file$1, 50, 2, 1513);
     			attr_dev(div1, "class", "toggle-container svelte-1qwba9b");
-    			add_location(div1, file$1, 49, 0, 1480);
+    			add_location(div1, file$1, 44, 0, 1387);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
-    		m: function mount(target, anchor, remount) {
+    		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
     			if (if_block0) if_block0.m(div0, null);
     			append_dev(div0, t0);
     			if (if_block1) if_block1.m(div0, null);
-    			/*div0_binding*/ ctx[13](div0);
+    			/*div0_binding*/ ctx[11](div0);
     			insert_dev(target, t1, anchor);
     			insert_dev(target, div1, anchor);
-    			append_dev(div1, label);
-    			append_dev(label, button);
-    			append_dev(button, t2);
+    			if (if_block2) if_block2.m(div1, null);
     			current = true;
-    			if (remount) dispose();
-    			dispose = listen_dev(button, "click", /*replay*/ ctx[8], false, false, false);
     		},
     		p: function update(ctx, [dirty]) {
     			if (/*animateAll*/ ctx[2]) {
     				if (if_block0) {
     					if_block0.p(ctx, dirty);
     				} else {
-    					if_block0 = create_if_block_6(ctx);
+    					if_block0 = create_if_block_7(ctx);
     					if_block0.c();
     					if_block0.m(div0, t0);
     				}
@@ -2224,7 +2256,7 @@
     						transition_in(if_block1, 1);
     					}
     				} else {
-    					if_block1 = create_if_block$1(ctx);
+    					if_block1 = create_if_block_1$1(ctx);
     					if_block1.c();
     					transition_in(if_block1, 1);
     					if_block1.m(div0, null);
@@ -2243,15 +2275,28 @@
     				toggle_class(div0, "done", /*done*/ ctx[4]);
     			}
 
-    			if (dirty & /*expanded*/ 32) {
-    				toggle_class(div0, "expanded", /*expanded*/ ctx[5]);
-    			}
+    			if (/*done*/ ctx[4]) {
+    				if (if_block2) {
+    					if_block2.p(ctx, dirty);
 
-    			if (!current || dirty & /*buttonName*/ 64) set_data_dev(t2, /*buttonName*/ ctx[6]);
+    					if (dirty & /*done*/ 16) {
+    						transition_in(if_block2, 1);
+    					}
+    				} else {
+    					if_block2 = create_if_block$1(ctx);
+    					if_block2.c();
+    					transition_in(if_block2, 1);
+    					if_block2.m(div1, null);
+    				}
+    			} else if (if_block2) {
+    				if_block2.d(1);
+    				if_block2 = null;
+    			}
     		},
     		i: function intro(local) {
     			if (current) return;
     			transition_in(if_block1);
+    			transition_in(if_block2);
     			current = true;
     		},
     		o: function outro(local) {
@@ -2262,10 +2307,10 @@
     			if (detaching) detach_dev(div0);
     			if (if_block0) if_block0.d();
     			if (if_block1) if_block1.d();
-    			/*div0_binding*/ ctx[13](null);
+    			/*div0_binding*/ ctx[11](null);
     			if (detaching) detach_dev(t1);
     			if (detaching) detach_dev(div1);
-    			dispose();
+    			if (if_block2) if_block2.d();
     		}
     	};
 
@@ -2298,7 +2343,6 @@
     	];
 
     	let el = null;
-    	let animateSVG = false;
     	let animateCloud = false;
     	let animateAll = false;
     	let visible = false;
@@ -2313,7 +2357,6 @@
     	onMount(() => {
     		console.log("mount");
     		$$invalidate(2, animateAll = el.parentElement.classList.contains("animate-all"));
-    		animateSVG = animateAll || el.parentElement.classList.contains("animate-svg");
     		$$invalidate(1, animateCloud = animateAll || el.parentElement.classList.contains("animate-cloud"));
     		setTimeout(() => $$invalidate(3, visible = true), 500);
     	});
@@ -2344,29 +2387,24 @@
     		quartOut,
     		paths,
     		el,
-    		animateSVG,
     		animateCloud,
     		animateAll,
     		visible,
     		done,
     		wordCloud: wordCloud$1,
     		replay,
-    		expanded,
     		buttonName
     	});
 
     	$$self.$inject_state = $$props => {
     		if ("el" in $$props) $$invalidate(0, el = $$props.el);
-    		if ("animateSVG" in $$props) animateSVG = $$props.animateSVG;
     		if ("animateCloud" in $$props) $$invalidate(1, animateCloud = $$props.animateCloud);
     		if ("animateAll" in $$props) $$invalidate(2, animateAll = $$props.animateAll);
     		if ("visible" in $$props) $$invalidate(3, visible = $$props.visible);
     		if ("done" in $$props) $$invalidate(4, done = $$props.done);
-    		if ("expanded" in $$props) $$invalidate(5, expanded = $$props.expanded);
-    		if ("buttonName" in $$props) $$invalidate(6, buttonName = $$props.buttonName);
+    		if ("buttonName" in $$props) $$invalidate(5, buttonName = $$props.buttonName);
     	};
 
-    	let expanded;
     	let buttonName;
 
     	if ($$props && "$$inject" in $$props) {
@@ -2380,12 +2418,8 @@
     			}
     		}
 
-    		if ($$self.$$.dirty & /*visible, done*/ 24) {
-    			 $$invalidate(5, expanded = !(visible && done));
-    		}
-
     		if ($$self.$$.dirty & /*animateAll, animateCloud*/ 6) {
-    			 $$invalidate(6, buttonName = animateAll
+    			 $$invalidate(5, buttonName = animateAll
     			? "replay all"
     			: animateCloud
     				? "replay word cloud animation"
@@ -2399,11 +2433,9 @@
     		animateAll,
     		visible,
     		done,
-    		expanded,
     		buttonName,
     		paths,
     		replay,
-    		animateSVG,
     		outroend_handler,
     		outroend_handler_1,
     		introend_handler,

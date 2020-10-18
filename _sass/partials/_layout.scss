@@ -534,6 +534,10 @@ figure {
       margin: 8px 0 0;
     }
 
+    &.preview {
+      font-weight: 300;
+    }
+
     .read-more {
       color: $white-color;
     }
