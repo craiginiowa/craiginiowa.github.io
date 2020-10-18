@@ -1,8 +1,14 @@
 <div class="ex">
 
-  {% if include.name == "html-snippet-1" %}
-  <div class="html-snippet-1"></div>
-
+  {% if include.name == "site-logo" %}
+  <div class="site-logo home">
+    <div class="billboard">
+      <div class="skills-cloud">developer • graphic<br>artist • illustrator •<br>copy editor • other<br>assorted activities</div>
+      <div class="craiginiowa-logo">
+        <img src="{{ 'assets/img/craiginiowa.svg' | relative_url }}">
+      </div>
+    </div>
+  </div>
   {% elsif include.name == "html-snippet-2" %}
   <div class="html-snippet-2"></div>
 

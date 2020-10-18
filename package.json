@@ -1,0 +1,12 @@
+{
+  "name": "craiginiowa.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve:draft": "bundle exec 'jekyll serve --draft'",
+    "serve": "bundle exec 'jekyll serve'" 
+  },
+  "author": "",
+  "license": "ISC"
+}

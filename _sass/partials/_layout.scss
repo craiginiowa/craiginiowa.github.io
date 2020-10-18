@@ -173,10 +173,6 @@
     }
   }
 
-  &.blog-post {
-    margin-top: 50px;
-  }
-
   &.project {
     height: 100%;
     padding: 0;
@@ -528,9 +524,18 @@ figure {
       color: $white-color;
     }
 
+    p a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
     .timestamp {
       font-weight: 300;
       margin: 8px 0 0;
+    }
+
+    &.preview {
+      font-weight: 300;
     }
 
     .read-more {

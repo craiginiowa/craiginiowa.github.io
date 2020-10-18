@@ -6,8 +6,8 @@ categories: [general]
 tags: []
 pinned: true
 image:
-    url: assets/img/previous-sites.jpg
-    credit: photo credit
+  url: assets/img/previous-sites.jpg
+  credit: photo credit
 ---
 
 I guess I should kick off my initial blog post with "Hi, Mom!"
