@@ -12,37 +12,6 @@ scripts: [animated-site-logo.js]
 
 <section class="page-content">
   <div class="animated-site-logo home"></div>
-<!--   <div class="billboard">
-    <div class="skills-cloud">developer &bull; graphic<br>artist &bull; illustrator &bull;<br>copy editor &bull; other<br>assorted activities</div>
-    <div class="craiginiowa-logo">
-      <img src="{{ 'assets/img/craiginiowa.svg' | relative_url }}">
-    </div>
-  </div>
- -->
-  {%- assign pinned = site.posts | where: "pinned", true | first -%}
-  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-  <div class="post preview pinned">
-    <label>PINNED BLOG ENTRY</label>
-    <h6 class="timestamp">{{ pinned.date | date: date_format }}</h6>
-    <a class="post-title" href="{{ pinned.url | relative_url }}">
-      <h2>{{ pinned.title | escape }}</h2>
-    </a>
-    {{ pinned.excerpt }}
-    <a class="read-more right-caret" href="{{ pinned.url | relative_url }}">READ MORE</a>
-  </div>
-
-  {%- assign latest = site.posts | where: "pinned", false | first -%}
-  {% if latest %}
-  <div class="post preview">
-    <label>LATEST BLOG ENTRY</label>
-    <h6 class="timestamp">{{ latest.date | date: date_format }}</h6>
-    <a class="post-title" href="{{ latest.url | relative_url }}">
-      <h2>{{ latest.title | escape }}</h2>
-    </a>
-    {{ latest.excerpt }}
-    <a class="read-more right-caret" href="{{ latest.url | relative_url }}">READ MORE</a>
-  </div>
-  {% endif %}
 
   {% include collection-thumbs.html collection=site.developer name='developer' path='/developer/' featured=true %}
 

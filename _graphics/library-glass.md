@@ -7,9 +7,9 @@ featured: true
 published: true
 images: [graphics/large/LibraryWindows.jpg]
 thumbnail: graphics/small/LibraryWindows.jpg
-tags: [Des Moines Register,3D]
+tags: [Des Moines Register, 3D]
 ---
 
 # Libarary Glass
 
-This is another bread-and-butter-type illustration of the news graphics trade. The walls of the new Des Moines central library have a very distinctive transluscent, copper-colored look to them, and this cutaway graphic shows why.
+This is another bread-and-butter-type illustration of the news graphics trade. The walls of the Des Moines central library — built in 2006 — have a very distinctive transluscent, copper-colored look to them, and this cutaway graphic shows why.
