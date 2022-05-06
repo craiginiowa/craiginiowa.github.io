@@ -20,7 +20,7 @@ Anyway, welcome to the new site! This is, not counting the earliest "meet the ne
 
 **Version No. 2:** I'm a serious graphic artist. Here are Photoshop cutouts showing my talents and interests. Here are some badges to show you I'm comfortable with the technology of the day.
 
-**Third time's a charm:** I'm better at design and layout. I have 3-d illustration skills. I'm trying to get a comic strip published.
+**Third time's a charm:** I'm better at design and layout. I have 3D illustration skills. I'm trying to get a comic strip published.
 
 Really, they were all fine for what they were intended to be at the time. I mostly needed a place I could point people toward to see samples of my work. Problem was, I'd put a lot of initial effort into building them and getting them online, and then ... that was pretty much it. I wouldn't touch them again.
 
