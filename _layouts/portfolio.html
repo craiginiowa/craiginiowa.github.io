@@ -4,7 +4,7 @@ layout: default
 <div class="page-content portfolio{% if page.code %} code{% endif %}">
   <section class="column content">
     {% for image in page.images %}
-    <img src="{{ image | prepend: "assets/img/" | relative_url }}">
+    <img class="portfolio-image" src="{{ image | prepend: "assets/img/" | relative_url }}">
     {% endfor %}
     {% if page.code %}
       {% assign local = page.code | slice: 0, 4 %}

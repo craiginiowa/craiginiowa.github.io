@@ -3,7 +3,7 @@ title: Video Grid
 description: Video grid for investigtion into U.S. maternal death rates
 layout: portfolio
 cid: developer
-featured: true
+featured: false
 published: true
 images: [developer/large/deadly-deliveries-video-grid.jpg]
 thumbnail: developer/small/deadly-deliveries-video-grid.jpg

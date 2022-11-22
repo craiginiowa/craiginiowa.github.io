@@ -4,7 +4,7 @@ title: Let's get it started
 _date: "2020-04-10 15:00:00 -0600"
 categories: [general]
 tags: []
-pinned: true
+pinned: false
 image:
   url: assets/img/previous-sites.jpg
   credit: photo credit
