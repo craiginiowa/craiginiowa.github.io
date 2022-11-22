@@ -161,6 +161,7 @@
         text-align: center;
 
         img {
+          border: 1px solid $gray-color-light;
           max-width: 100%;
         }
 
@@ -409,6 +410,7 @@ figure {
 }
 
 .thumbnail-inner {
+  border: 1px solid rgba(0,0,0,.1);
   overflow: hidden;
   position: absolute;
   top: 0;

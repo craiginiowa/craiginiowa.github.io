@@ -3,7 +3,7 @@ title: Candidate Tracker
 description: Interactive schedule of visits by candidates for president
 layout: portfolio
 cid: developer
-featured: true
+featured: false
 published: true
 images: [developer/large/candidate-tracker.jpg]
 thumbnail: developer/small/candidate-tracker.jpg

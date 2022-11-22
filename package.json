@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve:draft": "bundle exec 'jekyll serve --draft'",
-    "serve": "bundle exec 'jekyll serve'"
+    "serve:draft": "bundle exec 'jekyll serve --draft --livereload'",
+    "serve": "bundle exec 'jekyll serve --livereload'"
   },
   "author": "",
   "license": "ISC"
