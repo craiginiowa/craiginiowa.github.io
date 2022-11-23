@@ -3,7 +3,8 @@ title: Food Finder
 description: Interactive map and database of food vendors at the Iowa State Fair
 layout: portfolio
 cid: developer
-featured: false
+featured: true
+sortorder: 4
 published: true
 images: [developer/large/food-finder.jpg, developer/large/food-finder-admin.jpg]
 thumbnail: developer/small/food-finder.jpg

@@ -4,6 +4,7 @@ description: The USA TODAY NETWORK's Pulitzer Prize-winning look at the U.S.-Mex
 layout: portfolio
 cid: developer
 featured: true
+sortorder: 1
 published: true
 images:
   [

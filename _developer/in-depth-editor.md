@@ -4,6 +4,7 @@ description: "In Depth: The Storytelling Studio's tool for enhancing the design 
 layout: portfolio
 cid: developer
 featured: true
+sortorder: 3
 published: true
 images:
   [

@@ -4,6 +4,7 @@ description: A tool for building a more graphic narrative.
 layout: portfolio
 cid: developer
 featured: true
+sortorder: 2
 published: true
 images:
   [
