@@ -1,2 +1,28 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+  import AnimatedSiteLogo from "$lib/components/AnimatedSiteLogo.svelte";
+  import TestComponent from "$lib/components/TestComponent.svelte";
+</script>
+
+<div class="animated-site-logo">
+  <!-- <AnimatedSiteLogo /> -->
+</div>
+
+<!-- <div class="test">
+    <TestComponent />
+  </div> -->
+
+<style>
+  .animated-site-logo {
+    background-image: none;
+    color: #fff;
+    padding: 30px 0;
+    position: relative;
+  }
+  .test {
+    background-color: #fff;
+    position: relative;
+    margin: 0 auto;
+    height: 370px;
+    width: 300px;
+  }
+</style>

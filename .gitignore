@@ -1,8 +1,6 @@
-# Jekyll ignores
-jekyll files/
-
-# Ruby
-Gemfile.lock
+# Sveltekit ignores
+.svelte-kit/
+build/
 
 # Design
 design/
