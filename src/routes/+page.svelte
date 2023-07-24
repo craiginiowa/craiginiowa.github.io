@@ -1,6 +1,9 @@
 <script>
   import AnimatedSiteLogo from "$lib/components/AnimatedSiteLogo.svelte";
   import TestComponent from "$lib/components/TestComponent.svelte";
+  export let data;
+
+  // $: console.log(data);
 </script>
 
 <div class="animated-site-logo">

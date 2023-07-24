@@ -1,11 +1,11 @@
 <!-- page.svelte -->
 <script>
   export let data;
-  // $: console.log({ data });
 </script>
 
 <ul>
-  {#each data.files as file}
+  <li>Sample page</li>
+  <!-- {#each data.files as file}
     <li>
       <h2>
         <a href={file.path}>
@@ -14,7 +14,7 @@
       </h2>
       Description: {file.meta.description}
     </li>
-  {/each}
+  {/each} -->
 </ul>
 
 <style>

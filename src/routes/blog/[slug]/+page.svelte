@@ -1,6 +1,8 @@
 <script>
   export let data;
   const { title, date, content } = data;
+
+  $: console.log(data);
 </script>
 
 <article>

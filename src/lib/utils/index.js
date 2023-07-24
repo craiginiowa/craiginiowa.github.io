@@ -14,7 +14,6 @@ export const fetchMarkdownPosts = async () => {
     iterablePostFiles.map(async ([path, resolver]) => {
       const { metadata } = await resolver();
       const postPath = path.slice(11, -3).replace("/posts", "");
-      console.log(postPath);
       return {
         meta: metadata,
         path: postPath,
@@ -36,18 +35,14 @@ export const fetchPortfolioFiles = async (target) => {
 
   switch (target) {
     case "developer":
-      targetedPortfolioFiles = import.meta.glob(
-        "/src/routes/\\(portfolio\\)/developer/samples/*.md"
-      );
+      targetedPortfolioFiles = import.meta.glob("/src/routes/developer/*.md");
       break;
     case "graphics":
-      targetedPortfolioFiles = import.meta.glob(
-        "/src/routes/\\(portfolio\\)/graphics/samples/*.md"
-      );
+      targetedPortfolioFiles = import.meta.glob("/src/routes/graphics/*.md");
       break;
     case "illustrations":
       targetedPortfolioFiles = import.meta.glob(
-        "/src/routes/\\(portfolio\\)/illustrations/samples/*.md"
+        "/src/routes/illustrations/*.md"
       );
       break;
     default:
@@ -59,7 +54,7 @@ export const fetchPortfolioFiles = async (target) => {
   const allFiles = await Promise.all(
     iterablePortfolioFiles.map(async ([path, resolver]) => {
       const { metadata } = await resolver();
-      const filePath = path.slice(23, -3).replace("/samples", "");
+      const filePath = path.slice(11, -3).replace("/samples", "");
 
       return {
         meta: metadata,

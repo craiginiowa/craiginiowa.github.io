@@ -211,6 +211,10 @@
 
         :global(.home) & {
           color: $white-color-light;
+
+          &:hover {
+            color: $white-color;
+          }
         }
 
         &:hover {
