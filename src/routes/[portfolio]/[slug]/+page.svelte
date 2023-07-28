@@ -1,10 +1,11 @@
 <!-- page.svelte -->
 <script>
   export let data;
+  $: console.log(data);
 </script>
 
 <ul>
-  <li>Sample page</li>
+  <li><h2>Sample page</h2></li>
   <!-- {#each data.files as file}
     <li>
       <h2>

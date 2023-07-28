@@ -30,38 +30,105 @@ export const fetchMarkdownPosts = async () => {
  *
  * @returns {Array} - Array of { meta, path } objects
  */
-export const fetchPortfolioFiles = async (target) => {
-  let targetedPortfolioFiles;
+export const fetchPortfolioFiles = async () => {
+  const portfolioFiles = {
+    developer: null,
+    graphics: null,
+    illustrations: null,
+  };
 
-  switch (target) {
-    case "developer":
-      targetedPortfolioFiles = import.meta.glob("/src/routes/developer/*.md");
-      break;
-    case "graphics":
-      targetedPortfolioFiles = import.meta.glob("/src/routes/graphics/*.md");
-      break;
-    case "illustrations":
-      targetedPortfolioFiles = import.meta.glob(
-        "/src/routes/illustrations/*.md"
-      );
-      break;
-    default:
-      return [];
+  for (let key in portfolioFiles) {
+    let globbedFiles;
+
+    switch (key) {
+      case "developer":
+        globbedFiles = import.meta.glob(
+          "/src/routes/[portfolio]/developer/*.md"
+        );
+        break;
+      case "graphics":
+        globbedFiles = import.meta.glob(
+          "/src/routes/[portfolio]/graphics/*.md"
+        );
+        break;
+      case "illustrations":
+        globbedFiles = import.meta.glob(
+          "/src/routes/[portfolio]/illustrations/*.md"
+        );
+        break;
+    }
+
+    const iterableFiles = Object.entries(globbedFiles);
+    const allFiles = await Promise.all(
+      iterableFiles.map(async ([path, resolver]) => {
+        const { metadata } = await resolver();
+        const filePath = path.slice(23, -3);
+        return {
+          meta: metadata,
+          path: filePath,
+        };
+      })
+    );
+    portfolioFiles[key] = allFiles;
   }
 
-  const iterablePortfolioFiles = Object.entries(targetedPortfolioFiles);
-
-  const allFiles = await Promise.all(
-    iterablePortfolioFiles.map(async ([path, resolver]) => {
-      const { metadata } = await resolver();
-      const filePath = path.slice(11, -3).replace("/samples", "");
-
-      return {
-        meta: metadata,
-        path: filePath,
-      };
-    })
-  );
-
-  return allFiles;
+  return portfolioFiles;
+  /*
+  return {
+    developer: [
+      {
+        meta: { description: "This is a description.", title: "dev-one" },
+        path: "/developer/dev-one",
+      },
+      {
+        meta: { description: "This is a description.", title: "dev-two" },
+        path: "/developer/dev-two",
+      },
+      {
+        meta: { description: "This is a description.", title: "dev-three" },
+        path: "/developer/dev-three",
+      },
+    ],
+    graphics: [
+      {
+        meta: { description: "This is a description.", title: "graphics-one" },
+        path: "/graphics/graphics-one",
+      },
+      {
+        meta: { description: "This is a description.", title: "graphics-two" },
+        path: "/graphics/graphics-two",
+      },
+      {
+        meta: {
+          description: "This is a description.",
+          title: "graphics-three",
+        },
+        path: "/graphics/graphics-three",
+      },
+    ],
+    illustrations: [
+      {
+        meta: {
+          description: "This is a description.",
+          title: "illustrations-one",
+        },
+        path: "/illustrations/illustrations-one",
+      },
+      {
+        meta: {
+          description: "This is a description.",
+          title: "illustrations-two",
+        },
+        path: "/illustrations/illustrations-two",
+      },
+      {
+        meta: {
+          description: "This is a description.",
+          title: "illustrations-three",
+        },
+        path: "/illustrations/illustrations-three",
+      },
+    ],
+  };
+  */
 };

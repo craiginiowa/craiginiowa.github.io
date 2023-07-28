@@ -1,15 +1,17 @@
 <!-- post.svelte -->
 <script>
+  import { base } from "$app/paths";
+  import Billboard from "$lib/components/Billboard.svelte";
   export let data;
 </script>
 
-<h1>Blog</h1>
+<Billboard title="blog" />
 
 <ul>
   {#each data.posts as post}
     <li>
       <h2>
-        <a href={post.path}>
+        <a href={base + post.path}>
           {post.meta.title}
         </a>
       </h2>

@@ -1,3 +1,4 @@
+@use "sass:math";
 @use 'colors' as *;
 
 /**
@@ -119,7 +120,7 @@ table {
   }
 
   th, td {
-    padding: ($spacing-lg / 3) ($spacing-lg / 2);
+    padding: math.div($spacing-lg, 3) math.div($spacing-lg, 2);
   }
 
   th {

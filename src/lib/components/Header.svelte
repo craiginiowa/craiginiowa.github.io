@@ -1,5 +1,6 @@
 <script>
   import { page } from "$app/stores";
+  import { base } from "$app/paths";
 </script>
 
 <header class="site-header">
@@ -15,7 +16,7 @@
     <nav class="site-nav">
       <div class="site-logo-text">craig<span>in</span>iowa</div>
       {#if $page.route.id != "/"}
-        <a class="home-link page-link" href="/">home</a>
+        <a class="home-link page-link" href="{base}/">home</a>
       {/if}
       <span class="page-link-dropdown">
         <!-- svelte-ignore a11y-label-has-associated-control -->
@@ -24,30 +25,32 @@
           <a
             class="page-link"
             class:active={$page.route.id == "/developer"}
-            href="/developer">developer</a
+            href="{base}/developer">developer</a
           >
           <a
             class="page-link"
             class:active={$page.route.id == "/graphics"}
-            href="/graphics">graphics</a
+            href="{base}/graphics">graphics</a
           >
           <a
             class="page-link"
             class:active={$page.route.id == "/illustrations"}
-            href="/illustrations">illustrations</a
+            href="{base}/illustrations">illustrations</a
           >
         </div>
       </span>
-      <a class="page-link" class:active={$page.route.id == "/blog"} href="/blog"
-        >blog</a
+      <a
+        class="page-link"
+        class:active={$page.route.id == "/blog"}
+        href="{base}/blog">blog</a
       >
       <a
         class="page-link"
         class:active={$page.route.id == "/about"}
-        href="/about/">about</a
+        href="{base}/about">about</a
       >
     </nav>
-    <a class="site-name" rel="author" href="/">
+    <a class="site-name" rel="author" href="{base}/">
       <div class="site-logo-text">craig<span>in</span>iowa</div>
     </a>
   </div>

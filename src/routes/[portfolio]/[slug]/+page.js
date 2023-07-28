@@ -3,10 +3,9 @@
  * @param {Object} params
  * @returns
  */
-export const load = async ({ fetch, params }) => {
-  console.log({ params });
+export async function load({ fetch, params }) {
   return {};
   // const response = await fetch("/api/portfolio?target=developer");
   // const files = await response.json();
   // return { files };
-};
+}

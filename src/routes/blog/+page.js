@@ -1,8 +1,13 @@
-export const load = async ({ fetch }) => {
-  const response = await fetch("/api/posts");
-  const posts = await response.json();
+import { fetchMarkdownPosts } from "$lib/utils";
+
+export const load = async () => {
+  const allPosts = await fetchMarkdownPosts();
+
+  const sortedPosts = allPosts.sort((a, b) => {
+    return new Date(b.meta.date) - new Date(a.meta.date);
+  });
 
   return {
-    posts,
+    posts: sortedPosts,
   };
 };

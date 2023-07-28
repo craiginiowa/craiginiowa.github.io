@@ -53,18 +53,16 @@ This lets me build the SVG element in the html part of my Svelte component, loop
 I used Svelte's `{#each ...}` block to loop through the array, giving each character a 1 second animation and delaying the start of the animation by 200 milliseconds in succession by using the block's index variable as a multiplier.
 
 ```html
-{% raw %}
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -1 143.512 87.109">
   {#each paths as path, i}
   <path in:draw="{{ delay: i * 200, duration: 1000 }}" d="{path}" />
-  {/each} {% endraw %}
+  {/each}
 </svg>
 ```
 
 This is fine, but in my logo, the "in" is displayed at 50% opacity to give it some separation. No problem:
 
 ```html
-{% raw %}
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -1 143.512 87.109">
   {#each paths as path, i} {#if i == 5 || i == 6}
   <path
@@ -74,14 +72,13 @@ This is fine, but in my logo, the "in" is displayed at 50% opacity to give it so
   />
   {:else}
   <path in:draw="{{ delay: i * 200, duration: 1000 }}" d="{path}" />
-  {/if} {/each} {% endraw %}
+  {/if} {/each}
 </svg>
 ```
 
 Great! But this leaves me with outlines of the letters. I want them to be solid, which means applying a CSS style of `fill: white` once the animation is done. Luckily, Svelte transitions emit events when starting and finishing the transition. I can use the `introend` event to toggle a variable, then use that variable to set a class on my logo, and finally use that class to apply my rule.
 
 ```html
-{% raw %}
 <div class="billboard" class:done>
   ...
 
@@ -105,7 +102,6 @@ Great! But this leaves me with outlines of the letters. I want them to be solid,
 
   ....
 </div>
-{% endraw %}
 ```
 
 And the CSS with transitions to fade in the solid fill:
@@ -139,7 +135,6 @@ const wordCloud =
 I'll again use the `{#each ...}` block, but this time, I'll use the `fade` transition, and instead of setting `delay` using the `index` varaiable, I'll use `Math.random()` to set a delay of between 1 and 3.5 seconds.
 
 ```html
-{% raw %}
 <div class="skills-cloud">
   {#each wordCloud.split("") as character}
   <span in:fade="{{ delay: Math.random() * 2500 + 1000, duration: 100 }}"
@@ -147,7 +142,6 @@ I'll again use the `{#each ...}` block, but this time, I'll use the `fade` trans
   >
   {/each}
 </div>
-{% endraw %}
 ```
 
 One problem with this. The static word cloud had a couple of `<br>` tags to keep the string compact, so I'll add a couple of `/` characters where the `<br>` tags should go, then sub them out in the `{#each ...}` loop.
@@ -158,7 +152,6 @@ const wordCloud =
 ```
 
 ```html
-{% raw %}
 <div class="skills-cloud">
   {#each wordCloud.split("") as character, i} {#if character == "/"}
   <br />
@@ -168,7 +161,6 @@ const wordCloud =
   >
   {/if} {/each}
 </div>
-{% endraw %}
 ```
 
 And done:
@@ -180,7 +172,6 @@ And done:
 Finally, I want to add a "ta-da" burst to the outline of the logo package at the end. The only Svelte-specific part of this is setting a class when it's time to trigger my animation on the outline. For that, I'll use the `outroend` event, which is emitted when the word cloud transition finishes. Beyond that, it uses standard CSS transitions and a keyframe animation: I hide the 1-pixel border until the SVG animation is done, then animate a white `box-shadow` on the `.animated-border` element.
 
 ```html
-{% raw %}
 <div class="animated-border" class:visible></div>
 <div class="skills-cloud" on:outroend="{() => visible = true}">
   {#each wordCloud.split("") as character, i} {#if character == "/"}
@@ -191,7 +182,6 @@ Finally, I want to add a "ta-da" burst to the outline of the logo package at the
   >
   {/if} {/each}
 </div>
-{% endraw %}
 ```
 
 ```css

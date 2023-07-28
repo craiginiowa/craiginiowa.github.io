@@ -1,14 +1,17 @@
+const PORTFOLIO_TITLES = {
+  developer: "developer",
+  graphics: "news graphics",
+  illustrations: "illustrator",
+};
+
 /**
  * load function should fetch files for params.portfolio
  * @param {Object} params
  * @returns
  */
 
-export const load = async ({ fetch, params }) => {
-  console.log({ params });
-  // const response = await fetch("/api/posts");
-  // const posts = await response.json();
-  const title = params.portfolio;
-
-  return { title };
-};
+export async function load({ params }) {
+  const { portfolio } = params;
+  const title = PORTFOLIO_TITLES[portfolio];
+  return { title, portfolio };
+}

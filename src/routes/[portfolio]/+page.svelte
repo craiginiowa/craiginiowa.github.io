@@ -1,19 +1,22 @@
-<!-- post.svelte -->
 <script>
+  import { base } from "$app/paths";
+  import Billboard from "$lib/components/Billboard.svelte";
   export let data;
+
+  $: portfolio = data[data.portfolio];
 </script>
 
-<h1>{data.title}</h1>
+<Billboard title={data.title} />
 
 <ul>
-  <!-- {#each data.posts as post}
+  {#each portfolio as item}
     <li>
       <h2>
-        <a href={post.path}>
-          {post.meta.title}
+        <a href={base + item.path}>
+          {item.meta.title}
         </a>
       </h2>
-      Published {post.meta.date}
+      <p>{item.meta.description}</p>
     </li>
-  {/each} -->
+  {/each}
 </ul>
