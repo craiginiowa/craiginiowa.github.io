@@ -12,8 +12,14 @@ export const fetchMarkdownPosts = async () => {
 
   const allPosts = await Promise.all(
     iterablePostFiles.map(async ([path, resolver]) => {
+      let postPath = path.slice(11, -3).replace("/posts", "");
+      const postParts = postPath.match(/\/(\d{4})-(\d{2})-(\d{2})-([^.]+)/);
       const { metadata } = await resolver();
-      const postPath = path.slice(11, -3).replace("/posts", "");
+
+      if (postParts.index == 5) {
+        postPath = "/blog/" + postParts.slice(1, 5).join("/");
+      }
+
       return {
         meta: metadata,
         path: postPath,

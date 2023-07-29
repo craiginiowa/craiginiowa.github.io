@@ -3,7 +3,7 @@ layout: post
 title: Tiled U.S. map with CSS grid
 slug: tiled-us-map-with-css-grid
 author: Craig Johnson
-_date: 2020-05-08 12:25:00 -0600
+date: 2020-05-08 12:25:00 -0600
 categories: dev
 pinned: false
 links: [examples/css-grid-map.css]

@@ -3,6 +3,7 @@
   import { base } from "$app/paths";
   import Billboard from "$lib/components/Billboard.svelte";
   export let data;
+  $: console.log(data);
 </script>
 
 <Billboard title="blog" />

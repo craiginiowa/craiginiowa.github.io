@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Let's get it started
-_date: "2020-04-10 15:00:00 -0600"
+date: "2020-04-10 15:00:00 -0600"
 categories: [general]
 tags: []
 pinned: false
