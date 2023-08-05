@@ -10,10 +10,10 @@
     <li>
       <h2>
         <a href={file.path}>
-          {file.meta.title}
+          {file.title}
         </a>
       </h2>
-      Description: {file.meta.description}
+      Description: {file.description}
     </li>
   {/each} -->
 </ul>

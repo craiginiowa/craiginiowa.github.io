@@ -12,7 +12,7 @@ export async function load({ params }) {
     }
   }
 
-  const { title, date } = post.metadata;
+  const { title, date } = postdata;
   const content = post.default;
 
   return {

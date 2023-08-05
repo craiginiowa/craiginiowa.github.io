@@ -1,13 +1,17 @@
 <script>
   import AnimatedSiteLogo from "$lib/components/AnimatedSiteLogo.svelte";
-  import PostExcerpt from "$lib/components/PostExcerpt.svelte";
+  import DateFormatter from "$lib/components/DateFormatter.svelte";
+  import CollectionThumbs from "$lib/components/CollectionThumbs.svelte";
   import TestComponent from "$lib/components/TestComponent.svelte";
+  import { base } from "$app/paths";
 
   export let data;
 
   const { developer, graphics, illustrations, posts } = data;
 
-  $: pinned = posts.find((post) => post.meta.pinned);
+  $: pinned = posts.find((post) => post.pinned);
+
+  $: latest = posts.find((post) => post.pinned == false);
 
   // $: console.log(data);
 </script>
@@ -21,28 +25,53 @@
   </div> -->
 
 {#if pinned}
-  <PostExcerpt post={pinned} kicker="PINNED BLOG POST" />
+  <div class="post preview">
+    <label>PINNED BLOG POST</label>
+    <h6 class="timestamp">
+      <DateFormatter date={pinned.date} />
+    </h6>
+    <a class="post-title" href={base + pinned.path}>
+      <h2>{pinned.title}</h2>
+    </a>
+    <p>{@html pinned.excerpt}</p>
+    <a class="read-more right-caret" href={base + pinned.path}>READ MORE</a>
+  </div>
 {/if}
 
-<!--
-  {%- assign pinned = site.posts | where: "pinned", true | first -%}
-  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-  {% if pinned %} 
-  {% endif %}
-
-  {%- assign latest = site.posts | where: "pinned", false | first -%}
-  {% if latest %}
+{#if latest}
   <div class="post preview">
     <label>LATEST BLOG ENTRY</label>
-    <h6 class="timestamp">{{ latest.date | date: date_format }}</h6>
-    <a class="post-title" href="{{ latest.url | relative_url }}">
-      <h2>{{ latest.title | escape }}</h2>
+    <h6 class="timestamp">
+      <DateFormatter date={latest.date} />
+    </h6>
+    <a class="post-title" href={base + latest.path}>
+      <h2>{latest.title}</h2>
     </a>
-    {{ latest.excerpt }}
-    <a class="read-more right-caret" href="{{ latest.url | relative_url }}">READ MORE</a>
+    <p>{@html latest.excerpt}</p>
+    <a class="read-more right-caret" href={base + latest.path}>READ MORE</a>
   </div>
-  {% endif %}
--->
+{/if}
+
+<CollectionThumbs
+  collection={data.developer}
+  name="developer"
+  path="/developer/"
+  featured="true"
+/>
+
+<CollectionThumbs
+  collection={data.graphics}
+  name="graphic artist"
+  path="/graphics/"
+  featured="true"
+/>
+
+<CollectionThumbs
+  collection={data.illustrations}
+  name="illustrator"
+  path="/illustrations/"
+  featured="true"
+/>
 
 <style>
   body {

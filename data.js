@@ -60,7 +60,7 @@ async function readMarkdownFiles(dirpath, relpath, pullExcerpt = false) {
         }
 
         const item = {
-          meta: data,
+          ...data,
           path: relpath + file.slice(0, -3),
         };
 
@@ -90,7 +90,7 @@ if (DRAFTMODE) {
 }
 
 posts.sort((a, b) => {
-  return new Date(b.meta.date) - new Date(a.meta.date);
+  return new Date(b.date) - new Date(a.date);
 });
 
 try {

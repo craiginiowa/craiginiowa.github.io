@@ -13,10 +13,10 @@
     <li>
       <h2>
         <a href={base + item.path}>
-          {item.meta.title}
+          {item.title}
         </a>
       </h2>
-      <p>{item.meta.description}</p>
+      <p>{item.description}</p>
     </li>
   {/each}
 </ul>

@@ -9,15 +9,15 @@
 
 <Billboard title="blog" />
 
-<ul>
+<ul post-list>
   {#each data.posts as post}
-    <li>
+    <li class="post">
       <h2>
         <a href={base + post.path}>
-          {post.meta.title}
+          {post.title}
         </a>
       </h2>
-      Published {post.meta.date}
+      Published {post.date}
     </li>
   {/each}
 </ul>
