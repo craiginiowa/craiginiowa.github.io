@@ -1,11 +1,9 @@
 ---
-layout: post
 title: Animating a logo with Svelte
 slug: animated-site-logo
 author: Craig Johnson
 date: 2020-10-18 01:50:00 -0600
-categories: dev
-pinned: false
+pinned: true
 image:
   url: assets/img/examples/rebuilding-america-front.jpg
 links: [examples/animated-site-logo/bundle.css]

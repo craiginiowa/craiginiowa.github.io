@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Let's get it started
 date: "2020-04-10 15:00:00 -0600"
-categories: [general]
 tags: []
 pinned: false
 image:

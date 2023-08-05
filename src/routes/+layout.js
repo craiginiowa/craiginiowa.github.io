@@ -1,9 +1,8 @@
-import { fetchPortfolioFiles } from "$lib/utils";
+import data from "../data/data.json";
 
-export async function load({ fetch }) {
-  const site = await fetchPortfolioFiles();
+export async function load() {
   return {
-    ...site,
+    ...data,
   };
 }
 

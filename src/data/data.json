@@ -1,0 +1,717 @@
+{
+  "developer": [
+    {
+      "meta": {
+        "title": "The Border Wall",
+        "description": "The USA TODAY NETWORK's Pulitzer Prize-winning look at the U.S.-Mexico border.",
+        "layout": "portfolio",
+        "cid": "developer",
+        "featured": true,
+        "sortorder": 1,
+        "published": true,
+        "images": [
+          "developer/large/the-wall.jpg",
+          "developer/large/the-wall-journey.jpg",
+          "developer/large/the-wall-nav.jpg"
+        ],
+        "thumbnail": "developer/small/the-wall.jpg",
+        "link": "https://www.usatoday.com/border-wall/",
+        "tags": [
+          "javascript",
+          "in-depth",
+          "Storytelling Studio"
+        ]
+      },
+      "path": "/developer/border-wall"
+    },
+    {
+      "meta": {
+        "title": "Candidate Tracker",
+        "description": "Interactive schedule of visits by candidates for president",
+        "layout": "portfolio",
+        "cid": "developer",
+        "featured": false,
+        "published": true,
+        "images": [
+          "developer/large/candidate-tracker.jpg"
+        ],
+        "thumbnail": "developer/small/candidate-tracker.jpg",
+        "tags": [
+          "javascript",
+          "backbone",
+          "jquery",
+          "Des Moines Register"
+        ]
+      },
+      "path": "/developer/candidate-tracker"
+    },
+    {
+      "meta": {
+        "title": "Cincinnati Neighborhoods",
+        "description": "What to do with a ton of data on Cincinnati neighborhoods? Build a data lookup!",
+        "layout": "portfolio",
+        "cid": "developer",
+        "featured": false,
+        "published": true,
+        "images": [
+          "developer/large/cincy-neighborhoods.jpg"
+        ],
+        "thumbnail": "developer/small/cincy-neighborhoods.jpg",
+        "link": "https://www.cincinnati.com/storytelling/cincinnati-neighborhoods/",
+        "tags": [
+          "javascript",
+          "in-depth",
+          "Storytelling Studio"
+        ]
+      },
+      "path": "/developer/cincinnati-neighborhoods"
+    },
+    {
+      "meta": {
+        "title": "Video Grid",
+        "description": "Video grid for investigtion into U.S. maternal death rates",
+        "layout": "portfolio",
+        "cid": "developer",
+        "featured": false,
+        "published": true,
+        "images": [
+          "developer/large/deadly-deliveries-video-grid.jpg"
+        ],
+        "thumbnail": "developer/small/deadly-deliveries-video-grid.jpg",
+        "link": "https://www.usatoday.com/deadly-deliveries/videos/",
+        "tags": [
+          "javascript",
+          "polymer",
+          "video",
+          "Storytelling Studio",
+          "in-depth"
+        ]
+      },
+      "path": "/developer/deadly-deliveries-video-grid"
+    },
+    {
+      "meta": {
+        "title": "Floods of 2008",
+        "description": "Revisiting the Iowa flood of 2008.",
+        "layout": "portfolio",
+        "cid": "developer",
+        "featured": false,
+        "published": true,
+        "images": [
+          "developer/large/flood-2008.jpg"
+        ],
+        "thumbnail": "developer/small/flood-2008.jpg",
+        "tags": [
+          "javascript",
+          "Des Moines Register"
+        ]
+      },
+      "path": "/developer/flood-2008"
+    },
+    {
+      "meta": {
+        "title": "Food Finder",
+        "description": "Interactive map and database of food vendors at the Iowa State Fair",
+        "layout": "portfolio",
+        "cid": "developer",
+        "featured": true,
+        "sortorder": 4,
+        "published": true,
+        "images": [
+          "developer/large/food-finder.jpg",
+          "developer/large/food-finder-admin.jpg"
+        ],
+        "thumbnail": "developer/small/food-finder.jpg",
+        "tags": [
+          "javascript",
+          "maps",
+          "iOS",
+          "Des Moines Register"
+        ]
+      },
+      "path": "/developer/food-finder"
+    },
+    {
+      "meta": {
+        "title": "Graphic Novel Editor",
+        "description": "A tool for building a more graphic narrative.",
+        "layout": "portfolio",
+        "cid": "developer",
+        "featured": true,
+        "sortorder": 2,
+        "published": true,
+        "images": [
+          "developer/large/gne-projects.jpg",
+          "developer/large/gne-layout1.jpg",
+          "developer/large/gne-layout2.jpg"
+        ],
+        "thumbnail": "developer/small/graphic-novel-editor.jpg",
+        "tags": [
+          "javascript",
+          "Des Moines Register"
+        ]
+      },
+      "path": "/developer/graphic-novel-editor"
+    },
+    {
+      "meta": {
+        "title": "In-Depth Editor",
+        "description": "In Depth: The Storytelling Studio's tool for enhancing the design and presentation of stories.",
+        "layout": "portfolio",
+        "cid": "developer",
+        "featured": true,
+        "sortorder": 3,
+        "published": true,
+        "images": [
+          "developer/large/ide-index.jpg",
+          "developer/large/ide-editor1.jpg",
+          "developer/large/ide-editor2.jpg"
+        ],
+        "thumbnail": "developer/small/indepth-editor.jpg",
+        "tags": [
+          "javascript",
+          "in-depth",
+          "Storytelling Studio"
+        ]
+      },
+      "path": "/developer/in-depth-editor"
+    },
+    {
+      "meta": {
+        "title": "Local Test",
+        "description": "Can I run an app locally?",
+        "layout": "portfolio",
+        "cid": "developer",
+        "featured": false,
+        "published": false,
+        "images": [],
+        "code": "test/index.html",
+        "thumbnail": "no-image.png",
+        "tags": [
+          "javascript"
+        ]
+      },
+      "path": "/developer/local-test"
+    },
+    {
+      "meta": {
+        "title": "Parkersburg Tornado",
+        "description": "The Des Moines Register documents the damage done by the Parkersburg tornado.",
+        "layout": "portfolio",
+        "cid": "developer",
+        "featured": false,
+        "published": true,
+        "images": [
+          "developer/large/parkersburg.jpg"
+        ],
+        "thumbnail": "developer/small/parkersburg.jpg",
+        "link": null,
+        "tags": [
+          "javascript",
+          "in-depth",
+          "Storytelling Studio"
+        ]
+      },
+      "path": "/developer/parkersburg-tornado"
+    },
+    {
+      "meta": {
+        "title": "Podcasts Landing Page",
+        "description": "Scrolling slideshow story topper.",
+        "layout": "portfolio",
+        "cid": "developer",
+        "featured": false,
+        "published": false,
+        "images": [
+          "developer/large/podcasts.jpg"
+        ],
+        "thumbnail": "developer/small/podcasts.jpg",
+        "link": "https://www.usatoday.com/podcasts/",
+        "tags": [
+          "javascript",
+          "in-depth",
+          "Storytelling Studio"
+        ]
+      },
+      "path": "/developer/podcasts-landing-page"
+    },
+    {
+      "meta": {
+        "title": "Rainfall Lookup",
+        "description": "A look at changing rainfall patterns acroll the country",
+        "layout": "portfolio",
+        "cid": "developer",
+        "featured": false,
+        "published": true,
+        "images": [
+          "developer/large/rainfall-lookup.jpg"
+        ],
+        "thumbnail": "developer/small/rainfall-lookup.jpg",
+        "link": "https://www.usatoday.com/storytelling/news/investigation/rainfall-lookup/",
+        "tags": [
+          "javascript",
+          "in-depth",
+          "Storytelling Studio"
+        ]
+      },
+      "path": "/developer/rainfall-lookup"
+    },
+    {
+      "meta": {
+        "title": "Scrolly Topper",
+        "description": "Scrolling slideshow story topper.",
+        "layout": "portfolio",
+        "cid": "developer",
+        "featured": false,
+        "published": true,
+        "images": [
+          "developer/large/scrolly-topper.jpg"
+        ],
+        "thumbnail": "developer/small/scrolly-topper.jpg",
+        "link": "https://www.courier-journal.com/in-depth/news/2019/09/04/rachael-denhollander-sacrifice-continues-after-accusing-usa-gymnastics-larry-nassar/1919109001/",
+        "tags": [
+          "javascript",
+          "in-depth",
+          "Storytelling Studio"
+        ]
+      },
+      "path": "/developer/scrollly-topper"
+    },
+    {
+      "meta": {
+        "title": "Virtual Senior Night",
+        "description": "Honoring senior athletes trapped at home by the COVID-19 pandemic.",
+        "layout": "portfolio",
+        "cid": "developer",
+        "featured": "flase",
+        "published": true,
+        "images": [
+          "developer/large/virtual-senior-night.jpg"
+        ],
+        "thumbnail": "developer/small/virtual-senior-night.jpg",
+        "link": "https://www.greenvilleonline.com/in-depth/sports/high-school/2020/05/27/virtual-senior-night-recognizing-athletes-who-lost-their-senior-season/5200370002/",
+        "tags": [
+          "javascript",
+          "in-depth",
+          "Storytelling Studio"
+        ]
+      },
+      "path": "/developer/virtual-senior-night"
+    }
+  ],
+  "graphics": [
+    {
+      "meta": {
+        "title": "Ethanol Plant",
+        "description": "Graphic diagramming the steps in ethanol production",
+        "layout": "portfolio",
+        "cid": "graphics",
+        "featured": true,
+        "published": true,
+        "images": [
+          "graphics/large/HowEthanolIsMade.jpg"
+        ],
+        "thumbnail": "graphics/small/HowEthanolIsMade.jpg",
+        "tags": [
+          "3D",
+          "Des Moines Register"
+        ]
+      },
+      "path": "/graphics/ethanol"
+    },
+    {
+      "meta": {
+        "title": "Iowa State Fair",
+        "description": "3D illustration of Iowa State Fair fairgrounds",
+        "layout": "portfolio",
+        "cid": "graphics",
+        "featured": true,
+        "published": true,
+        "images": [
+          "graphics/large/IowaStateFairgrounds2007.jpg",
+          "graphics/large/IowaStateFairgrounds2019.jpg"
+        ],
+        "thumbnail": "graphics/small/IowaStateFairgrounds2007.jpg",
+        "link": "/assets/img/graphics/pdfs/2021-Map-with-Legend-Website-Updated.pdf",
+        "tags": [
+          "Des Moines Register",
+          "3D"
+        ]
+      },
+      "path": "/graphics/fairgrounds"
+    },
+    {
+      "meta": {
+        "title": "Indy Car",
+        "description": "3D illustration of an IndyCar racing car",
+        "layout": "portfolio",
+        "cid": "graphics",
+        "featured": true,
+        "published": true,
+        "images": [
+          "graphics/large/IndyCarAnatomy.jpg"
+        ],
+        "thumbnail": "graphics/small/IndyCarAnatomy.jpg",
+        "tags": [
+          "Des Moines Register",
+          "3D"
+        ]
+      },
+      "path": "/graphics/indy-car"
+    },
+    {
+      "meta": {
+        "title": "Library Windows",
+        "description": "Graphic showing detail of Des Moines Public Libarary windows",
+        "layout": "portfolio",
+        "cid": "graphics",
+        "featured": true,
+        "published": true,
+        "images": [
+          "graphics/large/LibraryWindows.jpg"
+        ],
+        "thumbnail": "graphics/small/LibraryWindows.jpg",
+        "tags": [
+          "Des Moines Register",
+          "3D"
+        ]
+      },
+      "path": "/graphics/library-glass"
+    },
+    {
+      "meta": {
+        "title": "Recycling Process",
+        "description": "A look at Des Moines metro area recycling",
+        "layout": "portfolio",
+        "cid": "graphics",
+        "featured": false,
+        "published": true,
+        "images": [
+          "graphics/large/RecyclingGraphicDMR.jpg"
+        ],
+        "thumbnail": "graphics/small/RecyclingGraphicDMR.jpg",
+        "tags": [
+          "Des Moines Register",
+          "illustrator"
+        ]
+      },
+      "path": "/graphics/recycling-dmr"
+    },
+    {
+      "meta": {
+        "title": "Recycling Changes",
+        "description": "New recycling trucks for Lexington, Ky.",
+        "layout": "portfolio",
+        "cid": "graphics",
+        "featured": false,
+        "published": true,
+        "images": [
+          "graphics/large/RecyclingGraphicHL.jpg"
+        ],
+        "thumbnail": "graphics/small/RecyclingGraphicHL.jpg",
+        "tags": [
+          "Lexington Herald-Leader",
+          "illustrator"
+        ]
+      },
+      "path": "/graphics/recycling-hl"
+    },
+    {
+      "meta": {
+        "title": "River Pollution",
+        "description": "An illustrated look at source of pollution in Iowa rivers",
+        "layout": "portfolio",
+        "cid": "graphics",
+        "featured": false,
+        "published": true,
+        "images": [
+          "graphics/large/RiverPollution.jpg"
+        ],
+        "thumbnail": "graphics/small/RiverPollution.jpg",
+        "tags": [
+          "Des Moines Register",
+          "3D"
+        ]
+      },
+      "path": "/graphics/river-pollution"
+    },
+    {
+      "meta": {
+        "title": "Wind Turbine",
+        "description": "An inside look at a modern wind turbine",
+        "layout": "portfolio",
+        "cid": "graphics",
+        "featured": false,
+        "published": true,
+        "images": [
+          "graphics/large/WindTurbine.jpg"
+        ],
+        "thumbnail": "graphics/small/WindTurbine.jpg",
+        "tags": [
+          "Des Moines Register",
+          "3D"
+        ]
+      },
+      "path": "/graphics/wind-turbine"
+    }
+  ],
+  "illustrations": [
+    {
+      "meta": {
+        "title": "Animal of the Week",
+        "description": "Pencil drawings of various animals",
+        "layout": "portfolio",
+        "cid": "illustrations",
+        "featured": false,
+        "published": true,
+        "images": [
+          "illustrations/large/animals.jpg"
+        ],
+        "thumbnail": "illustrations/small/animals.jpg",
+        "tag": [
+          "pencil",
+          "Lexington Herald-Leader"
+        ]
+      },
+      "path": "/illustrations/animals"
+    },
+    {
+      "meta": {
+        "title": "Applebee's Park",
+        "description": "The home field of the Lexington Legends minor league baseball team",
+        "layout": "portfolio",
+        "cid": "illustrations",
+        "featured": true,
+        "published": true,
+        "images": [
+          "illustrations/large/applebee_park.jpg"
+        ],
+        "thumbnail": "illustrations/small/applebee_park.jpg",
+        "tags": [
+          "3D",
+          "architectural",
+          "Lexington Herald-Leader"
+        ]
+      },
+      "path": "/illustrations/applebees-park"
+    },
+    {
+      "meta": {
+        "title": "Campus Romance",
+        "description": "Illustration accompanying a Valentines Day story",
+        "layout": "portfolio",
+        "cid": "illustrations",
+        "featured": true,
+        "published": true,
+        "images": [
+          "illustrations/large/campus-love.jpg"
+        ],
+        "thumbnail": "illustrations/small/campus-love.jpg",
+        "tags": [
+          "pencil",
+          "Lexington Herald-Leader"
+        ]
+      },
+      "path": "/illustrations/campus-love"
+    },
+    {
+      "meta": {
+        "title": "Climate Change",
+        "description": "A bunch of climage change hot spots in one illustration",
+        "layout": "portfolio",
+        "cid": "illustrations",
+        "featured": false,
+        "published": true,
+        "images": [
+          "illustrations/large/ClimateChange.jpg"
+        ],
+        "thumbnail": "illustrations/small/ClimateChange.jpg",
+        "tags": [
+          "3D",
+          "Des Moines Register"
+        ]
+      },
+      "path": "/illustrations/climate-change"
+    },
+    {
+      "meta": {
+        "title": "Indy Car",
+        "description": "3D illustration of an open wheel Indy-style racing car",
+        "layout": "portfolio",
+        "cid": "illustrations",
+        "featured": false,
+        "published": true,
+        "images": [
+          "illustrations/large/IndyCar.jpg"
+        ],
+        "thumbnail": "illustrations/small/IndyCar.jpg",
+        "tags": [
+          "3D",
+          "Des Moines Register"
+        ]
+      },
+      "path": "/illustrations/indy-car"
+    },
+    {
+      "meta": {
+        "title": "Iowa Caucuses",
+        "description": "The differences between Democratic and Republican caucuses",
+        "layout": "portfolio",
+        "cid": "illustrations",
+        "featured": false,
+        "published": true,
+        "images": [
+          "illustrations/large/CaucusesDemocrats.jpg",
+          "illustrations/large/CaucusesRepublicans.jpg"
+        ],
+        "thumbnail": "illustrations/small/CaucusesDemocrats.jpg",
+        "tags": [
+          "Des Moines Register",
+          "3D"
+        ]
+      },
+      "path": "/illustrations/iowa-caucuses"
+    },
+    {
+      "meta": {
+        "title": "Kentucky Derby",
+        "description": "Herald-Leader Derby section front illustration",
+        "layout": "portfolio",
+        "cid": "illustrations",
+        "featured": true,
+        "published": true,
+        "images": [
+          "illustrations/large/KentuckyDerby.jpg"
+        ],
+        "thumbnail": "illustrations/small/KentuckyDerby.jpg",
+        "tags": [
+          "Lexington Herald-Leader",
+          "illustrator"
+        ]
+      },
+      "path": "/illustrations/kentucky-derby"
+    },
+    {
+      "meta": {
+        "title": "Wells Fargo Arena",
+        "description": "3D illustrations for the opening of the Des Moines arena",
+        "layout": "portfolio",
+        "cid": "illustrations",
+        "featured": true,
+        "published": true,
+        "images": [
+          "illustrations/large/WellsFargoArena.jpg",
+          "illustrations/large/WellsFargoArenaSuite.jpg"
+        ],
+        "thumbnail": "illustrations/small/WellsFargoArena.jpg",
+        "tags": [
+          "Des Moines Register",
+          "3D",
+          "architectural"
+        ]
+      },
+      "path": "/illustrations/wells-fargo-arena"
+    }
+  ],
+  "posts": [
+    {
+      "meta": {
+        "title": "Hey there! Long time no blog",
+        "date": "2022-11-23 15:00:00 -0600",
+        "categories": [
+          "general"
+        ],
+        "tags": [],
+        "pinned": false,
+        "excerpt": "<em>&quot;I&#39;m hoping the inclusion of a blog will get me to work on it a bit more.&quot;</em>"
+      },
+      "path": "/blog/long-time-no-blog",
+      "draft": true
+    },
+    {
+      "meta": {
+        "title": "Animating a logo with Svelte",
+        "slug": "animated-site-logo",
+        "author": "Craig Johnson",
+        "date": "2020-10-18 01:50:00 -0600",
+        "pinned": true,
+        "image": {
+          "url": "assets/img/examples/rebuilding-america-front.jpg"
+        },
+        "links": [
+          "examples/animated-site-logo/bundle.css"
+        ],
+        "scripts": [
+          "examples/animated-site-logo/bundle.js"
+        ],
+        "excerpt": "In May of 2020, I built an animated SVG logo for USA Today&#39;s Rebuilding America front, a landing place for stories about how America would rebuild as states began opening back up. The Svelte framework made it embarassingly easy."
+      },
+      "path": "/blog/animated-site-logo",
+      "draft": false
+    },
+    {
+      "meta": {
+        "title": "Tiled U.S. map with CSS grid",
+        "slug": "tiled-us-map-with-css-grid",
+        "author": "Craig Johnson",
+        "date": "2020-05-08 12:25:00 -0600",
+        "pinned": false,
+        "links": [
+          "examples/css-grid-map.css"
+        ],
+        "scripts": [
+          "examples/css-grid-map.js"
+        ],
+        "excerpt": "One of the most common news graphics is a map of the U.S. displaying some metric on a state-by-state basis — number of coronavirus infections, unemployment rate, percentage of residents with college degrees, number of golf courses per capita, etc. Often, the map is interactive. Click on a state and see some details about the metric in question."
+      },
+      "path": "/blog/stylized-us-map-with-css-grid",
+      "draft": false
+    },
+    {
+      "meta": {
+        "title": "Let's get it started",
+        "date": "2020-04-10 15:00:00 -0600",
+        "tags": [],
+        "pinned": false,
+        "image": {
+          "url": "assets/img/previous-sites.jpg",
+          "credit": "photo credit"
+        },
+        "excerpt": "I guess I should kick off my initial blog post with &quot;Hi, Mom!&quot;"
+      },
+      "path": "/blog/lets-get-it-started",
+      "draft": false
+    },
+    {
+      "meta": {
+        "title": "Lorem ipsum dolor sit amet",
+        "slug": "lorem-ipsum-dolor",
+        "author": "Craig Johnosn",
+        "date": "2019-03-19 15:04:00 -0600",
+        "categories": "dev",
+        "pinned": false,
+        "image": {
+          "url": "assets/img/cyclones-mbb-four.jpg",
+          "caption": "This is the image caption.",
+          "credit": "photo credit"
+        },
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod consequat."
+      },
+      "path": "/blog/lorem-ipsum",
+      "draft": true
+    },
+    {
+      "meta": {
+        "title": "This post demonstrates post content styles",
+        "slug": "post-content-styles",
+        "categories": "junk",
+        "author": "Bart Simpson",
+        "meta": "Springfield",
+        "pinned": false,
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit."
+      },
+      "path": "/blog/this-post-demonstrates-post-content-styles",
+      "draft": true
+    }
+  ]
+}

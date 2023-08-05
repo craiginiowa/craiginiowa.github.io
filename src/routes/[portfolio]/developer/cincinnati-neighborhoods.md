@@ -17,4 +17,4 @@ The Cincinnati Enquirer, in an effort to help the city's residents better unders
 
 The app groups information by either metric — race, income, education, etc. — or by neighborhood. I built custom dropdown components for either case and templates to handle both. The metrics template presents a list ranking the neighorhoods by the selected metric, along with a simple chart-like graphic to show distribution. The neighborhood template displays selected metrics as a narrative, highlighting the important numbers, accompanied by bar charts, pie charts and waffle charts.
 
-<!-- {% include external-link.html url=page.link text="Cincinnati Neighborhoods" %} -->
+{% include external-link.html url=page.link text="Cincinnati Neighborhoods" %}

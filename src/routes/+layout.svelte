@@ -14,6 +14,10 @@
 <Header />
 
 <main class="page-wrapper">
+  {#if $page.route.id == "/"}
+    <section class="animated-background" />
+  {/if}
+
   <section class="page-content">
     <slot />
   </section>

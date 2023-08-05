@@ -2,27 +2,32 @@
  * Get markdown files in blog/posts directory. Vite supports importing multiple modules
  * from the file system via the special import.meta.glob function.
  *
+ * If includeDrafPosts is true, grab posts in blog/drafts directory as well.
+ *
  * https://vitejs.dev/guide/features.html#glob-import
  *
  * @returns {Array} - Array of { meta, path } objects
  */
 export const fetchMarkdownPosts = async () => {
   const allPostFiles = import.meta.glob("/src/routes/blog/posts/*.md");
-  const iterablePostFiles = Object.entries(allPostFiles);
+  const draftPostFiles = import.meta.glob("/src/routes/blog/drafts/*.md");
+
+  const INCLUDE_DRAFT_POSTS = false;
+
+  const iterablePostFiles = INCLUDE_DRAFT_POSTS
+    ? Object.entries({ ...allPostFiles, ...draftPostFiles })
+    : Object.entries(allPostFiles);
 
   const allPosts = await Promise.all(
     iterablePostFiles.map(async ([path, resolver]) => {
-      let postPath = path.slice(11, -3).replace("/posts", "");
-      const postParts = postPath.match(/\/(\d{4})-(\d{2})-(\d{2})-([^.]+)/);
+      const draft = path.includes("drafts");
+      const postPath = path.slice(11, -3).replace(/\/posts|\/drafts/, "");
       const { metadata } = await resolver();
-
-      if (postParts.index == 5) {
-        postPath = "/blog/" + postParts.slice(1, 5).join("/");
-      }
 
       return {
         meta: metadata,
         path: postPath,
+        draft,
       };
     })
   );
@@ -79,62 +84,31 @@ export const fetchPortfolioFiles = async () => {
   }
 
   return portfolioFiles;
-  /*
-  return {
-    developer: [
-      {
-        meta: { description: "This is a description.", title: "dev-one" },
-        path: "/developer/dev-one",
-      },
-      {
-        meta: { description: "This is a description.", title: "dev-two" },
-        path: "/developer/dev-two",
-      },
-      {
-        meta: { description: "This is a description.", title: "dev-three" },
-        path: "/developer/dev-three",
-      },
-    ],
-    graphics: [
-      {
-        meta: { description: "This is a description.", title: "graphics-one" },
-        path: "/graphics/graphics-one",
-      },
-      {
-        meta: { description: "This is a description.", title: "graphics-two" },
-        path: "/graphics/graphics-two",
-      },
-      {
-        meta: {
-          description: "This is a description.",
-          title: "graphics-three",
-        },
-        path: "/graphics/graphics-three",
-      },
-    ],
-    illustrations: [
-      {
-        meta: {
-          description: "This is a description.",
-          title: "illustrations-one",
-        },
-        path: "/illustrations/illustrations-one",
-      },
-      {
-        meta: {
-          description: "This is a description.",
-          title: "illustrations-two",
-        },
-        path: "/illustrations/illustrations-two",
-      },
-      {
-        meta: {
-          description: "This is a description.",
-          title: "illustrations-three",
-        },
-        path: "/illustrations/illustrations-three",
-      },
-    ],
-  };
-  */
 };
+
+/**
+ * Get first paragraph of blog post at path.
+ * @param {String}
+ */
+export async function postExcerpt(post) {
+  const { path, draft } = post;
+  const slug = path.replace("/blog/", "");
+  let firstParagraph;
+
+  try {
+    if (draft) {
+      post = await import(`../../routes/blog/drafts/${slug}.md`);
+    } else {
+      post = await import(`../../routes/blog/posts/${slug}.md`);
+    }
+  } catch (err) {
+    console.log(err);
+  }
+
+  if (typeof post.default.render == "function") {
+    const { html } = await post.default.render();
+    firstParagraph = html.split("</p>")[0].replace(/^<[^>]+>/, "");
+  }
+
+  return firstParagraph;
+}

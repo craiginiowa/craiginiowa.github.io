@@ -1,7 +1,7 @@
 <!-- page.svelte -->
 <script>
   export let data;
-  $: console.log(data);
+  // $: console.log(data);
 </script>
 
 <ul>

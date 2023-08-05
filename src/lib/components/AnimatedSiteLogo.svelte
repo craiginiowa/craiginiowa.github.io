@@ -114,6 +114,7 @@
     grid-gap: 24px;
     height: 130px;
     justify-content: center;
+    margin-bottom: 0;
     pointer-events: none;
     position: relative;
   }
