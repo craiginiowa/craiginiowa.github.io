@@ -14,6 +14,6 @@ This is a page with live code on it, placed there via iframe.
 
 Dev work on the code is done using [local-web-server](https://github.com/lwsjs/local-web-server) to serve the code from it's project directory.
 
-`$ ws --directory assets/code/test`
+`$ ws --directory /code/test`
 
-As it is simply static files, the code can also be developed elsewhere, say in a `svelte` project, and copied to the `assets/code` directory, or served from an external url.
+As it is simply static files, the code can also be developed elsewhere, say in a `svelte` project, and copied to the `/code` directory, or served from an external url.

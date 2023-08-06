@@ -21,9 +21,9 @@ import { marked } from "marked";
 const DRAFTMODE = true;
 
 const portfolio = {
-  developer: "./src/routes/[portfolio]/developer",
-  graphics: "./src/routes/[portfolio]/graphics",
-  illustrations: "./src/routes/[portfolio]/illustrations",
+  developer: "./src/routes/developer/samples",
+  graphics: "./src/routes/graphics/samples",
+  illustrations: "./src/routes/illustrations/samples",
 };
 const blog = {
   drafts: "./src/routes/blog/drafts",

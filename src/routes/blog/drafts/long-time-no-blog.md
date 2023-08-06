@@ -18,7 +18,7 @@ So what's the occasion for this missive? Another quote from that first post:
 
 _"Generally the thing that motivates me to work on a personal website is the prospect of looking for a new job [or] I fear I’m in danger of being downsized."_
 
-Fear of losing your job has become a constant in the newspaper business, particularly when the economy is in a funk, as has been the case since the advent of the COVID pandemic. So in the interest of staying ahead of the game, here's an update to the ol' personal website. Nothing major, just a few new examples under [/developer/](/developer/) and a downloadable [resume](/assets/craig_johnson.pdf).
+Fear of losing your job has become a constant in the newspaper business, particularly when the economy is in a funk, as has been the case since the advent of the COVID pandemic. So in the interest of staying ahead of the game, here's an update to the ol' personal website. Nothing major, just a few new examples under [/developer/](/developer/) and a downloadable [resume](//craig_johnson.pdf).
 
 ## Additions under /developer/
 

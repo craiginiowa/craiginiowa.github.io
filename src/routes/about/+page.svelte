@@ -157,7 +157,7 @@
     a web developer for Gannett.
   </p>
 
-  <!-- {% include external-link.html url="../assets/craig_johnson.pdf" text="Download my resume" %} -->
+  <!-- {% include external-link.html url="..//craig_johnson.pdf" text="Download my resume" %} -->
 </section>
 
 <style>
