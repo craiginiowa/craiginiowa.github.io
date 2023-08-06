@@ -4,23 +4,29 @@
   import Header from "$lib/components/Header.svelte";
   import "$lib/styles/style.scss";
 
+  export let data;
+
+  let main;
+
   $: if (browser) {
     if ($page.route.id == "/") {
       document.body.classList.add("home");
     } else document.body.classList.remove("home");
+
+    if (main && main.scrollTop > 0) {
+      main.scrollTo(0, 0);
+    }
   }
 </script>
 
 <Header />
 
-<main class="page-wrapper">
+<main class="page-wrapper" bind:this={main}>
   {#if $page.route.id == "/"}
     <section class="animated-background" />
   {/if}
 
-  <section class="page-content">
-    <slot />
-  </section>
+  <slot />
 
   <footer class="site-footer">
     <h5>© Craig Johnson. All Rights Reserved.</h5>
@@ -74,3 +80,22 @@
     </div>
   </footer>
 </main>
+
+<style lang="scss">
+  .page-wrapper {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 56px);
+    justify-content: space-between;
+    overflow-y: auto;
+    padding: 30px 20px 0;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+
+    @media (min-width: 480px) {
+      padding-top: 50px;
+    }
+  }
+</style>

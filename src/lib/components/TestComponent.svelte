@@ -7,7 +7,7 @@
     setTimeout(() => (visible = true), 500);
   });
   onDestroy(() => {
-    console.log("destory");
+    console.log("destroy");
   });
 </script>
 

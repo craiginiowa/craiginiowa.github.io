@@ -4,7 +4,7 @@ date: "2020-04-10 15:00:00 -0600"
 tags: []
 pinned: false
 image:
-  url: assets/img/previous-sites.jpg
+  url: /img/previous-sites.jpg
   credit: photo credit
 ---
 

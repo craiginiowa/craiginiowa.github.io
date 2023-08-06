@@ -2,9 +2,9 @@
   import { base } from "$app/paths";
 
   export let collection;
-  export let name;
   export let path;
-  export let featured;
+  export let name = "";
+  export let featured = false;
 
   $: thumbs = featured
     ? collection
@@ -13,9 +13,11 @@
         .sort((a, b) => {
           return a.sortorder - b.sortorder;
         })
-    : collection.filter((item) => item.published);
-
-  $: console.log(collection);
+    : collection
+        .filter((item) => item.published)
+        .sort((a, b) => {
+          return b.title.toLowerCase() < a.title.toLowerCase() ? 1 : -1;
+        });
 </script>
 
 <div class="thumbnails-container">
@@ -26,7 +28,7 @@
     {#each thumbs as thumb}
       {@const thumbnail = thumb.thumbnail || "no-image.png"}
       <div class="thumbnail-wrapper">
-        <a href={base + thumb.url}>
+        <a href={base + thumb.path}>
           <div class="thumbnail-inner">
             <img
               class="thumbnail-image"

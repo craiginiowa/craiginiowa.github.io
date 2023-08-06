@@ -12,12 +12,11 @@ export async function load({ params }) {
     }
   }
 
-  const { title, date } = postdata;
+  const { metadata } = post;
   const content = post.default;
 
   return {
+    ...metadata,
     content,
-    title,
-    date,
   };
 }

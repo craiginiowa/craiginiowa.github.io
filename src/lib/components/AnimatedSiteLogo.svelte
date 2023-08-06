@@ -17,7 +17,7 @@
     "M140.902,84.5h-3.804c-2.154,0-2.688-1.086-2.915-1.816l-0.754-2.502c-2.771,2.645-6.461,4.868-11.622,4.868 c-7.101,0-10.217-4.248-10.217-9.562c0-8.077,10.616-11.113,21.051-11.078v-2.072c0-5.224-2.876-6.979-5.83-6.979 c-3.415,0-7.107,2.321-7.679,2.642c-1.688,1.079-3.474,0.542-4.354-1.064l-1.542-2.708c4.046-3.701,8.925-5.554,14.64-5.554 c9.806,0,13.026,7.487,13.026,13.61L140.902,84.5L140.902,84.5z M124.447,79.222c2.283,0,5.557-0.858,8.192-3.746v-5.891 c-8.111-0.211-12.958,2.051-12.958,5.456C119.681,78.184,122.326,79.222,124.447,79.222z",
   ];
 
-  export let visible = true; /* DEBUGGING - Change back to false */
+  export let visible = false; /* DEBUGGING - Change back to false */
   let el = null;
   let done = true;
   let animate = false;
@@ -105,7 +105,7 @@
   {/if}
 </div>
 
-<style>
+<style lang="scss">
   .billboard {
     align-items: center;
     border-color: transparent;
@@ -138,23 +138,45 @@
     animation-timing-function: ease;
     animation-name: pulse;
   }
+  .skills-cloud {
+    font-size: 13px;
+    line-height: 1.35;
+    text-align: right;
+
+    @media (min-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
   .craiginiowa-logo {
     width: 100px;
+
+    @media (min-width: 768px) {
+      width: 142px;
+    }
   }
+
   svg {
     height: 100%;
     width: 100%;
   }
+
   svg path {
     fill: transparent;
     stroke: #fff;
     stroke-width: 0.065em;
     transition: fill 2s, stroke 0.7s 2s;
+
+    @media (min-width: 768px) {
+      stroke-width: 0.05em;
+    }
   }
+
   .done svg path {
     fill: #fff;
     stroke: transparent;
   }
+
   @keyframes pulse {
     from {
       box-shadow: 0px 0px 0px 0px #fff;
@@ -164,14 +186,6 @@
     }
     to {
       box-shadow: 0px 0px 0px 0px #fff;
-    }
-  }
-  @media (min-width: 768px) {
-    .craiginiowa-logo {
-      width: 142px;
-    }
-    svg path {
-      stroke-width: 0.05em;
     }
   }
 </style>

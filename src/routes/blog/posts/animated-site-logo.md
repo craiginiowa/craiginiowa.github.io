@@ -5,7 +5,7 @@ author: Craig Johnson
 date: 2020-10-18 01:50:00 -0600
 pinned: true
 image:
-  url: assets/img/examples/rebuilding-america-front.jpg
+  url: /img/examples/rebuilding-america-front.jpg
 links: [examples/animated-site-logo/bundle.css]
 scripts: [examples/animated-site-logo/bundle.js]
 ---

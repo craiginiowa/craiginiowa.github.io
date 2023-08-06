@@ -1,6 +1,7 @@
 <script>
   import { page } from "$app/stores";
   import { base } from "$app/paths";
+  $: console.log($page);
 </script>
 
 <header class="site-header">
@@ -24,17 +25,17 @@
         <div>
           <a
             class="page-link"
-            class:active={$page.route.id == "/developer"}
+            class:active={$page.route.id.includes("developer")}
             href="{base}/developer">developer</a
           >
           <a
             class="page-link"
-            class:active={$page.route.id == "/graphics"}
+            class:active={$page.route.id.includes("graphics")}
             href="{base}/graphics">graphics</a
           >
           <a
             class="page-link"
-            class:active={$page.route.id == "/illustrations"}
+            class:active={$page.route.id.includes("illustrations")}
             href="{base}/illustrations">illustrations</a
           >
         </div>
@@ -242,7 +243,12 @@
     }
 
     div {
+      .home & {
+        background-color: unset;
+      }
+
       @media (min-width: 768px) {
+        background-color: $white-color;
         display: none;
         margin-left: -10px;
         padding: 10px;

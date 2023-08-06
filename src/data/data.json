@@ -3,7 +3,6 @@
     {
       "title": "The Border Wall",
       "description": "The USA TODAY NETWORK's Pulitzer Prize-winning look at the U.S.-Mexico border.",
-      "layout": "portfolio",
       "cid": "developer",
       "featured": true,
       "sortorder": 1,
@@ -25,7 +24,6 @@
     {
       "title": "Candidate Tracker",
       "description": "Interactive schedule of visits by candidates for president",
-      "layout": "portfolio",
       "cid": "developer",
       "featured": false,
       "published": true,
@@ -44,7 +42,6 @@
     {
       "title": "Cincinnati Neighborhoods",
       "description": "What to do with a ton of data on Cincinnati neighborhoods? Build a data lookup!",
-      "layout": "portfolio",
       "cid": "developer",
       "featured": false,
       "published": true,
@@ -63,7 +60,6 @@
     {
       "title": "Video Grid",
       "description": "Video grid for investigtion into U.S. maternal death rates",
-      "layout": "portfolio",
       "cid": "developer",
       "featured": false,
       "published": true,
@@ -84,7 +80,6 @@
     {
       "title": "Floods of 2008",
       "description": "Revisiting the Iowa flood of 2008.",
-      "layout": "portfolio",
       "cid": "developer",
       "featured": false,
       "published": true,
@@ -101,7 +96,6 @@
     {
       "title": "Food Finder",
       "description": "Interactive map and database of food vendors at the Iowa State Fair",
-      "layout": "portfolio",
       "cid": "developer",
       "featured": true,
       "sortorder": 4,
@@ -122,7 +116,6 @@
     {
       "title": "Graphic Novel Editor",
       "description": "A tool for building a more graphic narrative.",
-      "layout": "portfolio",
       "cid": "developer",
       "featured": true,
       "sortorder": 2,
@@ -142,7 +135,6 @@
     {
       "title": "In-Depth Editor",
       "description": "In Depth: The Storytelling Studio's tool for enhancing the design and presentation of stories.",
-      "layout": "portfolio",
       "cid": "developer",
       "featured": true,
       "sortorder": 3,
@@ -163,7 +155,6 @@
     {
       "title": "Local Test",
       "description": "Can I run an app locally?",
-      "layout": "portfolio",
       "cid": "developer",
       "featured": false,
       "published": false,
@@ -178,7 +169,6 @@
     {
       "title": "Parkersburg Tornado",
       "description": "The Des Moines Register documents the damage done by the Parkersburg tornado.",
-      "layout": "portfolio",
       "cid": "developer",
       "featured": false,
       "published": true,
@@ -197,7 +187,6 @@
     {
       "title": "Podcasts Landing Page",
       "description": "Scrolling slideshow story topper.",
-      "layout": "portfolio",
       "cid": "developer",
       "featured": false,
       "published": false,
@@ -216,7 +205,6 @@
     {
       "title": "Rainfall Lookup",
       "description": "A look at changing rainfall patterns acroll the country",
-      "layout": "portfolio",
       "cid": "developer",
       "featured": false,
       "published": true,
@@ -235,7 +223,6 @@
     {
       "title": "Scrolly Topper",
       "description": "Scrolling slideshow story topper.",
-      "layout": "portfolio",
       "cid": "developer",
       "featured": false,
       "published": true,
@@ -254,7 +241,6 @@
     {
       "title": "Virtual Senior Night",
       "description": "Honoring senior athletes trapped at home by the COVID-19 pandemic.",
-      "layout": "portfolio",
       "cid": "developer",
       "featured": "flase",
       "published": true,
@@ -275,7 +261,6 @@
     {
       "title": "Ethanol Plant",
       "description": "Graphic diagramming the steps in ethanol production",
-      "layout": "portfolio",
       "cid": "graphics",
       "featured": true,
       "published": true,
@@ -292,7 +277,6 @@
     {
       "title": "Iowa State Fair",
       "description": "3D illustration of Iowa State Fair fairgrounds",
-      "layout": "portfolio",
       "cid": "graphics",
       "featured": true,
       "published": true,
@@ -301,7 +285,7 @@
         "graphics/large/IowaStateFairgrounds2019.jpg"
       ],
       "thumbnail": "graphics/small/IowaStateFairgrounds2007.jpg",
-      "link": "/assets/img/graphics/pdfs/2021-Map-with-Legend-Website-Updated.pdf",
+      "link": "//img/graphics/pdfs/2021-Map-with-Legend-Website-Updated.pdf",
       "tags": [
         "Des Moines Register",
         "3D"
@@ -311,7 +295,6 @@
     {
       "title": "Indy Car",
       "description": "3D illustration of an IndyCar racing car",
-      "layout": "portfolio",
       "cid": "graphics",
       "featured": true,
       "published": true,
@@ -328,7 +311,6 @@
     {
       "title": "Library Windows",
       "description": "Graphic showing detail of Des Moines Public Libarary windows",
-      "layout": "portfolio",
       "cid": "graphics",
       "featured": true,
       "published": true,
@@ -345,7 +327,6 @@
     {
       "title": "Recycling Process",
       "description": "A look at Des Moines metro area recycling",
-      "layout": "portfolio",
       "cid": "graphics",
       "featured": false,
       "published": true,
@@ -362,7 +343,6 @@
     {
       "title": "Recycling Changes",
       "description": "New recycling trucks for Lexington, Ky.",
-      "layout": "portfolio",
       "cid": "graphics",
       "featured": false,
       "published": true,
@@ -379,7 +359,6 @@
     {
       "title": "River Pollution",
       "description": "An illustrated look at source of pollution in Iowa rivers",
-      "layout": "portfolio",
       "cid": "graphics",
       "featured": false,
       "published": true,
@@ -396,7 +375,6 @@
     {
       "title": "Wind Turbine",
       "description": "An inside look at a modern wind turbine",
-      "layout": "portfolio",
       "cid": "graphics",
       "featured": false,
       "published": true,
@@ -415,7 +393,6 @@
     {
       "title": "Animal of the Week",
       "description": "Pencil drawings of various animals",
-      "layout": "portfolio",
       "cid": "illustrations",
       "featured": false,
       "published": true,
@@ -432,7 +409,6 @@
     {
       "title": "Applebee's Park",
       "description": "The home field of the Lexington Legends minor league baseball team",
-      "layout": "portfolio",
       "cid": "illustrations",
       "featured": true,
       "published": true,
@@ -450,7 +426,6 @@
     {
       "title": "Campus Romance",
       "description": "Illustration accompanying a Valentines Day story",
-      "layout": "portfolio",
       "cid": "illustrations",
       "featured": true,
       "published": true,
@@ -467,7 +442,6 @@
     {
       "title": "Climate Change",
       "description": "A bunch of climage change hot spots in one illustration",
-      "layout": "portfolio",
       "cid": "illustrations",
       "featured": false,
       "published": true,
@@ -484,7 +458,6 @@
     {
       "title": "Indy Car",
       "description": "3D illustration of an open wheel Indy-style racing car",
-      "layout": "portfolio",
       "cid": "illustrations",
       "featured": false,
       "published": true,
@@ -501,7 +474,6 @@
     {
       "title": "Iowa Caucuses",
       "description": "The differences between Democratic and Republican caucuses",
-      "layout": "portfolio",
       "cid": "illustrations",
       "featured": false,
       "published": true,
@@ -519,7 +491,6 @@
     {
       "title": "Kentucky Derby",
       "description": "Herald-Leader Derby section front illustration",
-      "layout": "portfolio",
       "cid": "illustrations",
       "featured": true,
       "published": true,
@@ -536,7 +507,6 @@
     {
       "title": "Wells Fargo Arena",
       "description": "3D illustrations for the opening of the Des Moines arena",
-      "layout": "portfolio",
       "cid": "illustrations",
       "featured": true,
       "published": true,
@@ -573,7 +543,7 @@
       "date": "2020-10-18 01:50:00 -0600",
       "pinned": true,
       "image": {
-        "url": "assets/img/examples/rebuilding-america-front.jpg"
+        "url": "/img/examples/rebuilding-america-front.jpg"
       },
       "links": [
         "examples/animated-site-logo/bundle.css"
@@ -607,7 +577,7 @@
       "tags": [],
       "pinned": false,
       "image": {
-        "url": "assets/img/previous-sites.jpg",
+        "url": "/img/previous-sites.jpg",
         "credit": "photo credit"
       },
       "excerpt": "I guess I should kick off my initial blog post with &quot;Hi, Mom!&quot;",
@@ -622,7 +592,7 @@
       "categories": "dev",
       "pinned": false,
       "image": {
-        "url": "assets/img/cyclones-mbb-four.jpg",
+        "url": "/img/cyclones-mbb-four.jpg",
         "caption": "This is the image caption.",
         "credit": "photo credit"
       },

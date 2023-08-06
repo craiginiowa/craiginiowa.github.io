@@ -6,14 +6,14 @@ date: 2019-03-19 15:04:00 -0600
 categories: dev
 pinned: false
 image:
-  url: assets/img/cyclones-mbb-four.jpg
+  url: /img/cyclones-mbb-four.jpg
   caption: This is the image caption.
   credit: photo credit
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod consequat.
 
-<!-- {% include right-rail-image.html url="assets/img/prohm.jpg" caption="This is the caption for the mug of Steve Prohm. He is the coach of Iowa State men's basketball." %} -->
+<!-- {% include right-rail-image.html url="/img/prohm.jpg" caption="This is the caption for the mug of Steve Prohm. He is the coach of Iowa State men's basketball." %} -->
 
 Duis aute irure dolor in reprehenderit in voluptate velit ess cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
@@ -40,7 +40,7 @@ Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliqui
 
 Sed do eiusmo tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod consequat.
 
-<!-- {% include right-rail-image.html url="assets/img/cyclones-mbb-four.jpg" caption="This is the caption for the picture of THT, Shayock, Weiler-Babb, Haliburton and Jacobsen." %} -->
+<!-- {% include right-rail-image.html url="/img/cyclones-mbb-four.jpg" caption="This is the caption for the picture of THT, Shayock, Weiler-Babb, Haliburton and Jacobsen." %} -->
 
 Duis aute irure dolor in reprehenderit in voluptate velit ess cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 

@@ -12,7 +12,7 @@ One of the most common news graphics is a map of the U.S. displaying some metric
 
 From a usability standpoint, the problem with this is — not to get too technical, but — some states are very big and some states are very small. And very small states are difficult to label and hard to click or tap.
 
-<!-- {% include image.html url="assets/img/examples/usmap.jpg" %} -->
+<!-- {% include image.html url="/img/examples/usmap.jpg" %} -->
 
 ### Enter the tile map
 
@@ -22,7 +22,7 @@ _**Full disclosure:** You can find better blog posts about the whys of tile maps
 
 But I digress. A square-tile map is simple to do using nothing more than CSS grid. I've used it in a couple of places, most recently on [this page](https://www.usatoday.com/storytelling/distancedance/) promoting the #DistanceDance movement on social media and [this one](https://www.usatoday.com/storytelling/coronavirus-reopening-america-map/) tracking the status of states' coronavirus restrictions. They both look like this, more or less.
 
-<!-- {% include image.html url="assets/img/examples/distance-dance.jpg" %} -->
+<!-- {% include image.html url="/img/examples/distance-dance.jpg" %} -->
 
 Each state is represented as a square tile, ordered to roughly appear where it would on a normal map. To help readers undersand what they're looking at, I added a silhouette of a standard U.S. map behind the tiles as a visual hint that this is indeed a map.
 
