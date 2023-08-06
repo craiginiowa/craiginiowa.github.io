@@ -7,7 +7,7 @@
     <header class="post-header">
       {#if data.image}
         <figure class="post-image">
-          <img src={data.image.url} />
+          <img src={data.image.url} alt={data.title} />
           {#if data.image.caption}
             <figcaption>
               {data.image.caption}
@@ -40,6 +40,6 @@
     {%- include disqus_comments.html -%}
     {%- endif -%} -->
 
-    <a class="u-url" href={data.url} hidden />
+    <!-- <a class="u-url" href={data.url} hidden /> -->
   </article>
 </section>

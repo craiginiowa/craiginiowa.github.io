@@ -5,7 +5,7 @@
 <div class="page-content portfolio">
   <section class="column content">
     {#each data.images as image}
-      <img class="portfolio-image" src="/img/{image}" />
+      <img class="portfolio-image" src="/img/{image}" alt={data.title} />
     {/each}
   </section>
   <section class="column text">

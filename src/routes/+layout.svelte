@@ -4,8 +4,6 @@
   import Header from "$lib/components/Header.svelte";
   import "$lib/styles/style.scss";
 
-  export let data;
-
   let main;
 
   $: if (browser) {

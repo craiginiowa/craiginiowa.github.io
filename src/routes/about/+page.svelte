@@ -5,7 +5,7 @@
 <section class="page-content">
   <Billboard title="about me" />
 
-  <img class="biopic" src="/img/my-dumb-face.jpg" />
+  <img class="biopic" src="/img/my-dumb-face.jpg" alt="My dumb face" />
 
   <p class="dropcap">
     Here's the part where I tell you all about myself, and that's not something
@@ -100,7 +100,7 @@
     scale projects of which I remain proud to this day: On the 50th anniversary
     of Buddy Holly's death near Clear Lake, Iowa, we published a project that
     made heavy use of Flash; and when a tornado decimated Parkersburg, Iowa, we <a
-      hdref="/developer/parkersburg-tornado">built a map</a
+      href="/developer/parkersburg-tornado">built a map</a
     > that showed the extent of the destruction with before and after photos and
     survivors' testimony.
   </p>

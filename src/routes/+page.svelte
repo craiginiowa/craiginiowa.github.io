@@ -25,7 +25,7 @@
 
   {#if pinned}
     <div class="post preview">
-      <label>PINNED BLOG POST</label>
+      <div class="post-kicker">PINNED BLOG POST</div>
       <h6 class="timestamp">
         <DateFormatter date={pinned.date} />
       </h6>
@@ -39,7 +39,7 @@
 
   {#if latest}
     <div class="post preview">
-      <label>LATEST BLOG ENTRY</label>
+      <div class="post-kicker">LATEST BLOG ENTRY</div>
       <h6 class="timestamp">
         <DateFormatter date={latest.date} />
       </h6>
