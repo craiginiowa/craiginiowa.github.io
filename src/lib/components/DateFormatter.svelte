@@ -21,7 +21,7 @@
       .replace(/(\d+:\d+):\d+/, "$1")
       .toLowerCase()
       .replace("/m$/", ".m.");
-    return dateString + " " + timeString;
+    return dateString + ", " + timeString;
   }
   function json() {
     return date.toJSON();

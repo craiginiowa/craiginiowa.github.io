@@ -6,6 +6,8 @@ tags: []
 pinned: false
 ---
 
+**Update:** [Skip to the bottom of the page](#update) for an update since this post. 
+
 _"I'm hoping the inclusion of a blog will get me to work on it a bit more."_
 
 That's a line from my first blog post. The first of a whopping total of three. Oh, sure, I started with the best of intentions. I was going to do a minimum of one post per month. Just the forced repetition would make me a better writer, a more productive writer.
@@ -36,3 +38,16 @@ Fear of losing your job has become a constant in the newspaper business, particu
 I did enjoy writing the post about [animating a logo with Svelte](/blog/animated-site-logo), so maybe another how-to is in order. I'm kind of toying with the idea of rebuilding the website in Svelte Kit. Not only would it be a great way to learn Svelte Kit, but it would open up the possibility of adding a bit more interactivity to the site since I'd be able to publish Svelte components right here within the pages and posts. In particular, there are a couple of things I did in Flash back in the day that I'd like to try to recreate with Svelte.
 
 Stay tuned.
+
+
+
+### <a name="update"></a>Update
+
+<p class="post-meta">Aug 11, 2023</p>
+
+I guess updating the site worked. I left Gannett in January for a front-end developer position with Dotdash Meredith (DDM). The work is a whole lot different from what I was doing with the Storytelling Studio, mostly because I'm working with DDM's very bespoke publishing system. It's a lot of XML. I like to say I don't so much develop any more as I configure. But the job security seems a bit more solid and the pay is better, and that's not nothing. In fact, my old team is no more.
+
+The layoff and furloughs of late 2022 lead to me leaving, which lead to the other two developers leaving, which lead to the end of the Storytelling Studio. I feel bad about it, but newspapers are in a very tough spot, and specialy teams are a luxury they can no longer afford. The sad thing is they're getting rid of all of the things that made newspapers special, taking away the very things that should be driving their recovery.
+
+But I digress. Bottom line is I have a new job. I'm still keeping my javascript chops sharp with personal projects — you're reading this on version 2 of this site, ported from `jekyll` to `sveltekit`. I'll try to share what I'm up to when I can find the time. Until then, thanks for reading.
+

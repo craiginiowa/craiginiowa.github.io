@@ -1,5 +1,4 @@
 <script>
-  import { base } from "$app/paths";
   import Billboard from "$lib/components/Billboard.svelte";
   import DateFormatter from "$lib/components/DateFormatter.svelte";
   export let data;
