@@ -8,11 +8,18 @@ links: [examples/css-grid-map.css]
 scripts: [examples/css-grid-map.js]
 ---
 
+<script>
+  import TiledMap from "../../../lib/components/TiledMap.svelte";
+</script>
+
 One of the most common news graphics is a map of the U.S. displaying some metric on a state-by-state basis — number of coronavirus infections, unemployment rate, percentage of residents with college degrees, number of golf courses per capita, etc. Often, the map is interactive. Click on a state and see some details about the metric in question.
 
 From a usability standpoint, the problem with this is — not to get too technical, but — some states are very big and some states are very small. And very small states are difficult to label and hard to click or tap.
 
-<!-- {% include image.html url="/img/examples/usmap.jpg" %} -->
+<figure class="image">
+    <img src="/img/examples/usmap.jpg">
+</figure>
+
 
 ### Enter the tile map
 
@@ -22,7 +29,9 @@ _**Full disclosure:** You can find better blog posts about the whys of tile maps
 
 But I digress. A square-tile map is simple to do using nothing more than CSS grid. I've used it in a couple of places, most recently on [this page](https://www.usatoday.com/storytelling/distancedance/) promoting the #DistanceDance movement on social media and [this one](https://www.usatoday.com/storytelling/coronavirus-reopening-america-map/) tracking the status of states' coronavirus restrictions. They both look like this, more or less.
 
-<!-- {% include image.html url="/img/examples/distance-dance.jpg" %} -->
+<figure class="image">
+    <img src="/img/examples/distance-dance.jpg">
+</figure>
 
 Each state is represented as a square tile, ordered to roughly appear where it would on a normal map. To help readers undersand what they're looking at, I added a silhouette of a standard U.S. map behind the tiles as a visual hint that this is indeed a map.
 
@@ -61,7 +70,9 @@ I'm using postal codes for the states. Take note that they're not in alphabetica
 
 So far, this is what we have.
 
-<!-- {% include snippets.html class="css-grid-map grid-container" id="map-1" %} -->
+<div class="ex">
+  <TiledMap mapId="map-1" square={false} adjusted={false} />
+</div>
 
 Not exactly what we wanted. We want square states, and it would be nice to make those postal codes a bit smaller and center them in the state. We can accomplish the former with a little pseudo element magic to set the aspect ratio to 1:1, and for the latter, flexbox will get us where we want to be.
 
@@ -82,11 +93,15 @@ Not exactly what we wanted. We want square states, and it would be nice to make 
 }
 ```
 
-<!-- {% include snippets.html class="css-grid-map grid-container square" id="map-2" %} -->
+<div class="ex">
+  <TiledMap mapId="map-2" adjusted={false} />
+</div>
 
 Better. Now to give it the general shape of the United States. The key to this is the `grid-column-start` property. Take a look at the square for "ME", or Maine. As the second item in the grid container, it falls in the second column. But we want it positioned in the 12th column. As the name implies, setting the `grid-column-start` property to 12 on that element will push it to that column:
 
-<!-- {% include snippets.html class="css-grid-map grid-container square" id="map-3" %} -->
+<div class="ex">
+  <TiledMap mapId="map-3" adjusted={false} />
+</div>
 
 Moving Maine to the 12th column pushes Vermont to the first column in the next row, but we want it in the 11th row, so that's the next target for `grid-column-start`. _That_ pushes Washington to the first column in the next row; we want it in the second column. And so on and so on. Setting `grid-column-start` on the appropriate states forces them into the rough shape we want.
 
@@ -120,7 +135,9 @@ Moving Maine to the 12th column pushes Vermont to the first column in the next r
 }
 ```
 
-<!-- {% include snippets.html class="css-grid-map grid-container square adjusted" id="map-4" %} -->
+<div class="ex">
+  <TiledMap mapId="map-4" />
+</div>
 
 Almost done. If you look at Puerto Rico on the #DistanceDance example above, it's pushed down another row. As we can change which column a state appears in with `grid-column-start`, we can change the row with `grid-row-start`.
 
@@ -131,7 +148,9 @@ Almost done. If you look at Puerto Rico on the #DistanceDance example above, it'
 }
 ```
 
-<!-- {% include snippets.html class="css-grid-map grid-container square adjusted" id="map-5" %} -->
+<div class="ex">
+  <TiledMap mapId="map-5" />
+</div>
 
 ### Finishing up
 
