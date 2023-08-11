@@ -86,17 +86,6 @@
   }
 }
 
-.external-link {
-  color: $site-color;
-  cursor: pointer;
-
-  svg {
-    margin-left: 8px;
-    stroke: $site-color;
-    height: 14px;
-  }
-}
-
 .site-footer {
   display: flex;
   align-items: center;
