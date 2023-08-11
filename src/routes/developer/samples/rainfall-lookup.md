@@ -6,9 +6,12 @@ featured: false
 published: true
 images: [developer/large/rainfall-lookup.jpg]
 thumbnail: developer/small/rainfall-lookup.jpg
-link: https://www.usatoday.com/storytelling/news/investigation/rainfall-lookup/
 tags: [javascript, in-depth, Storytelling Studio]
 ---
+
+<script>
+  import ExternalLink from "../../../lib/components/ExternalLink.svelte";  
+</script>
 
 # Rainfall Lookup
 
@@ -16,4 +19,4 @@ A lot of what reporters and editors come to the Storytelling Studio for is a way
 
 The technical details: Another Svelte app, utilizing a MapBox map, fed by CSV and GeoJSON files.
 
-<!-- {% include external-link.html url=page.link text="Rainfall Lookup" %} -->
+<ExternalLink url="https://www.usatoday.com/storytelling/news/investigation/rainfall-lookup/" text="Rainfall Lookup" />

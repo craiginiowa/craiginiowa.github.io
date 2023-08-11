@@ -12,7 +12,7 @@
     } else document.body.classList.remove("home");
 
     if (main && main.scrollTop > 0) {
-      main.scrollTo(0, 0);
+      // main.scrollTo(0, 0);
     }
   }
 </script>

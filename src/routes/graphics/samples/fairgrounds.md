@@ -10,9 +10,13 @@ images:
     graphics/large/IowaStateFairgrounds2019.jpg,
   ]
 thumbnail: graphics/small/IowaStateFairgrounds2007.jpg
-link: //img/graphics/pdfs/2021-Map-with-Legend-Website-Updated.pdf
+link: /img/graphics/pdfs/2021-Map-with-Legend-Website-Updated.pdf
 tags: [Des Moines Register, 3D]
 ---
+
+<script>
+  import ExternalLink from "../../../lib/components/ExternalLink.svelte";  
+</script>
 
 # Iowa State Fairgrounds
 
@@ -22,6 +26,4 @@ It wouldn't be inaccurate to say I kind of rue the day I had the idea to do this
 
 There were a few changes for 2019 that didn't make it into the update simply because I technically no longer work for the Des Moines Register, so this technically isn't my responsibility any more. I'm not sure anyone is upating it anymore, which is too bad, because after I left, the Register struck up a deal with the fair to use this map in an official capacity. It was a bit of a shock to turn aroud after buying my corndog a couple of years ago and see my map on a 6-foot-high billboard on the fairgrounds. (Kind of cool, too. Don't tell anyone I said so.)
 
-<!-- external link -->
-
-<!-- {% include external-link.html url=page.link text="Fairgounds Map (pdf)" %} -->
+<ExternalLink url={link} text="Fairgounds Map (pdf)" />

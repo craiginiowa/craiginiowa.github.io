@@ -68,24 +68,6 @@
   }
 }
 
-.billboard {
-  align-items: center;
-  border: 1px solid $text-color;
-  display: flex;
-  margin: 0 0 30px;
-  padding: 18px;
-
-  &.secondary {
-    margin-top: 75px;
-  }
-
-  h2 {
-    font-size: 42px;
-    font-weight: 400;
-    margin: 0;
-  }
-}
-
 .site-footer {
   display: flex;
   align-items: center;

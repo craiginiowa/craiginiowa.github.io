@@ -1,5 +1,6 @@
 <script>
   import Billboard from "$lib/components/Billboard.svelte";
+  import ExternalLink from "$lib/components/ExternalLink.svelte";
 </script>
 
 <section class="page-content">
@@ -157,7 +158,7 @@
     a web developer for Gannett.
   </p>
 
-  <!-- {% include external-link.html url="..//craig_johnson.pdf" text="Download my resume" %} -->
+  <ExternalLink url="/craig_johnson.pdf" text="Download my resume" />
 </section>
 
 <style>
