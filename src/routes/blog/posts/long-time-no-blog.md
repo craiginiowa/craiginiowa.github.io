@@ -6,7 +6,9 @@ tags: []
 pinned: false
 ---
 
-**Update:** [Skip to the bottom of the page](#update) for an update since this post. 
+<div class="note">
+  <strong>Update:</strong> <a href="#update">Skip to the bottom of the page</a> for an update since this post.
+</div>
 
 _"I'm hoping the inclusion of a blog will get me to work on it a bit more."_
 
@@ -16,7 +18,7 @@ So what happened?
 
 I guess I just don't have much to say. Just look at my Twitter account. It's mostly retweets or me reacting to the latest Iowa State football or basketball game. Let's face it, I'm a lurker.
 
-So what's the occasion for this missive? Another quote from that first post:
+What's the occasion for this missive? Another quote from that first post:
 
 _"Generally the thing that motivates me to work on a personal website is the prospect of looking for a new job [or] I fear I’m in danger of being downsized."_
 
@@ -47,7 +49,14 @@ Stay tuned.
 
 I guess updating the site worked. I left Gannett in January for a front-end developer position with Dotdash Meredith (DDM). The work is a whole lot different from what I was doing with the Storytelling Studio, mostly because I'm working with DDM's very bespoke publishing system. It's a lot of XML. I like to say I don't so much develop any more as I configure. But the job security seems a bit more solid and the pay is better, and that's not nothing. In fact, my old team is no more.
 
-The layoff and furloughs of late 2022 lead to me leaving, which lead to the other two developers leaving, which lead to the end of the Storytelling Studio. I feel bad about it, but newspapers are in a very tough spot, and specialy teams are a luxury they can no longer afford. The sad thing is they're getting rid of all of the things that made newspapers special, taking away the very things that should be driving their recovery.
+The layoff and furloughs of late 2022 lead to me leaving, which lead to the other two developers leaving, which lead to the end of the Storytelling Studio. I feel bad about it, but newspapers are in a very tough spot, and specialty teams are a luxury they can no longer, or _will_ no longer afford. The sad thing is they're getting rid of the things that made newspapers special, taking away what should be driving their recovery.
 
-But I digress. Bottom line is I have a new job. I'm still keeping my javascript chops sharp with personal projects — you're reading this on version 2 of this site, ported from `jekyll` to `sveltekit`. I'll try to share what I'm up to when I can find the time. Until then, thanks for reading.
+But I digress. Bottom line is I have a new job. I'm still keeping my javascript chops sharp with personal projects — you're looking version 2 of this site, ported from Ruby-based `jekyll` to javascript-based `sveltekit`. I'll try to share what I'm up to when I can find the time. Until then, thanks for reading.
 
+<style>
+  .note {
+    background-color: lemonchiffon;
+    margin: 1.5rem 0;
+    padding: 1rem;
+  }
+</style>

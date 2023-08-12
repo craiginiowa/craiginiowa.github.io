@@ -55,21 +55,21 @@
     collection={data.developer}
     name="developer"
     path="/developer/"
-    featured="true"
+    featured={true}
   />
 
   <CollectionThumbs
     collection={data.graphics}
     name="graphic artist"
     path="/graphics/"
-    featured="true"
+    featured={true}
   />
 
   <CollectionThumbs
     collection={data.illustrations}
     name="illustrator"
     path="/illustrations/"
-    featured="true"
+    featured={true}
   />
 </section>
 

@@ -18,7 +18,7 @@ import { readdir, readFile, writeFile } from "node:fs/promises";
 import { default as frontmatter } from "@github-docs/frontmatter";
 import { marked } from "marked";
 
-const DRAFTMODE = true;
+const DRAFTMODE = false;
 
 const portfolio = {
   developer: "./src/routes/developer/samples",

@@ -14,11 +14,13 @@
     I'm just not the type to toot my own horn. So where to start?
   </p>
   <p>
-    I'm a developer with Gannett, the newspaper company most famous for
-    publishing USA Today. I've been in the newspaper industry since graduating
-    from Iowa State University with a degree in journalism back when pica poles
-    and proportion wheels were still a thing, but getting to "developer" took a
-    somewhat circuitous route.
+    I'm a frontend developer with Dotdash Meredith, the fine folks who bring you
+    People magazine, Better Homes & Gardens and Entertainment Weekly, among many
+    others. Before that, I was a developer with Gannett, the newspaper company
+    most famous for publishing USA Today. I've been in the newspaper industry
+    since graduating from Iowa State University with a degree in journalism back
+    when pica poles and proportion wheels were still a thing, but getting to
+    "developer" took a somewhat circuitous route.
   </p>
   <p>
     <em
@@ -140,25 +142,22 @@
   </p>
   <p>
     Based on that work, I was offered a position in Gannett's Storytelling
-    Studio, which is where I am today. Our purpose is to break new ground in
+    Studio, whose purpose was to break new ground in
     digital storytelling, finding unique and original ways of engaging readers.
-    I take text, images, video, audio, maps, charts, 3D models, VR, AR &mdash;
-    everything is in our toolbox &mdash; and dream up new approaches to
+    We took text, images, video, audio, maps, charts, 3D models, VR, AR &mdash;
+    everything was in our toolbox &mdash; and dreamed up new approaches to
     presenting the news and compelling human interest stories.
   </p>
   <p>
-    One of the perks of trying new things: I routinely get to sink my teeth into
-    new frameworks and languages. Since joining the team, I've particularly
-    enjoyed working with GoLang and the VueJS and Svelte javascript frameworks,
-    and look forward to expanding my toolbox and knowledge as a developer.
+    As the newspaper industry continued to fall on hard times, it took a mandatory furlough week and a personnel cut to our team to get me to freshen up the resum&#233;. I sent out a few applications and heard back from Dotdash Meredith, another publishing company with a presence in Des Moines. I accepted an offer and have been plugging away, trying to figure out their very custom publishing system since January of 2023. It's a lot of XML work, a smattering of Java, and next to no javascript, which is where I'm most comfortable. I know there are teams in the company that work primarily with javascript, so I'll keep my eye on the internal job board. Until then, I miss newspapers, but I don't miss the stressing about job security.
   </p>
   <p id="tldr" class="tldr">
     <strong>tl;dr</strong> I studied journalism in college, started out as a newspaper
-    copy editor, switched to the graphics department, picked up Flash, then became
-    a web developer for Gannett.
+    copy editor, switched to the graphics department, picked up Flash, became
+    a web developer for Gannett, then moved to Dotdash Meredith.
   </p>
 
-  <ExternalLink url="/craig_johnson.pdf" text="Download my resume" />
+  <!-- <ExternalLink url="/craig_johnson.pdf" text="Download my resume" /> -->
 </section>
 
 <style>

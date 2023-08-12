@@ -49,7 +49,6 @@
         "developer/large/cincy-neighborhoods.jpg"
       ],
       "thumbnail": "developer/small/cincy-neighborhoods.jpg",
-      "link": "https://www.cincinnati.com/storytelling/cincinnati-neighborhoods/",
       "tags": [
         "javascript",
         "in-depth",
@@ -194,7 +193,6 @@
         "developer/large/podcasts.jpg"
       ],
       "thumbnail": "developer/small/podcasts.jpg",
-      "link": "https://www.usatoday.com/podcasts/",
       "tags": [
         "javascript",
         "in-depth",
@@ -212,7 +210,6 @@
         "developer/large/rainfall-lookup.jpg"
       ],
       "thumbnail": "developer/small/rainfall-lookup.jpg",
-      "link": "https://www.usatoday.com/storytelling/news/investigation/rainfall-lookup/",
       "tags": [
         "javascript",
         "in-depth",
@@ -285,7 +282,7 @@
         "graphics/large/IowaStateFairgrounds2019.jpg"
       ],
       "thumbnail": "graphics/small/IowaStateFairgrounds2007.jpg",
-      "link": "//img/graphics/pdfs/2021-Map-with-Legend-Website-Updated.pdf",
+      "link": "/img/graphics/pdfs/2021-Map-with-Legend-Website-Updated.pdf",
       "tags": [
         "Des Moines Register",
         "3D"
@@ -534,7 +531,7 @@
       "pinned": false,
       "excerpt": "<em>&quot;I&#39;m hoping the inclusion of a blog will get me to work on it a bit more.&quot;</em>",
       "path": "/blog/long-time-no-blog",
-      "draft": true
+      "draft": false
     },
     {
       "title": "Animating a logo with Svelte",
@@ -542,9 +539,8 @@
       "author": "Craig Johnson",
       "date": "2020-10-18 01:50:00 -0600",
       "pinned": true,
-      "image": {
-        "url": "/img/examples/rebuilding-america-front.jpg"
-      },
+      "image": null,
+      "url": "/img/examples/rebuilding-america-front.jpg",
       "links": [
         "examples/animated-site-logo/bundle.css"
       ],
@@ -583,33 +579,6 @@
       "excerpt": "I guess I should kick off my initial blog post with &quot;Hi, Mom!&quot;",
       "path": "/blog/lets-get-it-started",
       "draft": false
-    },
-    {
-      "title": "Lorem ipsum dolor sit amet",
-      "slug": "lorem-ipsum-dolor",
-      "author": "Craig Johnosn",
-      "date": "2019-03-19 15:04:00 -0600",
-      "categories": "dev",
-      "pinned": false,
-      "image": {
-        "url": "/img/cyclones-mbb-four.jpg",
-        "caption": "This is the image caption.",
-        "credit": "photo credit"
-      },
-      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod consequat.",
-      "path": "/blog/lorem-ipsum",
-      "draft": true
-    },
-    {
-      "title": "This post demonstrates post content styles",
-      "slug": "post-content-styles",
-      "categories": "junk",
-      "author": "Bart Simpson",
-      "meta": "Springfield",
-      "pinned": false,
-      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.",
-      "path": "/blog/this-post-demonstrates-post-content-styles",
-      "draft": true
     }
   ]
 }
