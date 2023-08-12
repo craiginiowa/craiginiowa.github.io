@@ -2172,7 +2172,7 @@
     		i: function intro(local) {
     			if (!button_intro) {
     				add_render_callback(() => {
-    					button_intro = create_in_transition(button, fade, { delay: 3000 });
+    					button_intro = create_in_transition(button, fade, { delay: 4000 });
     					button_intro.start();
     				});
     			}

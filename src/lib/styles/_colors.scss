@@ -1,0 +1,19 @@
+$background-color: #fdfdfd;
+
+$text-color: #2c2c2c;
+$text-color-light: lighten($text-color, 50%);
+$text-color-dark: darken($text-color, 25%);
+
+$site-color: #aa0000;
+$site-color-light: lighten($site-color, 50%);
+$site-color-dark: darken($site-color, 10%);
+
+$white-color: #ffffff;
+$white-color-light: rgba($white-color, 0.5);
+
+$gray-color: #828282;
+$gray-color-light: lighten($gray-color, 40%);
+$gray-color-dark: darken($gray-color, 25%);
+
+$red-color-dark: #440000;
+$red-color-light: #aa0000;

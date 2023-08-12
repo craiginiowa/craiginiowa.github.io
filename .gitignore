@@ -1,11 +1,6 @@
-# Jekyll ignores
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-
-# Ruby
-Gemfile.lock
+# Sveltekit ignores
+.svelte-kit/
+build/
 
 # Design
 design/
