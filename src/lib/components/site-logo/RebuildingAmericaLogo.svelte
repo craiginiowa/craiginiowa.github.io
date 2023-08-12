@@ -1,6 +1,9 @@
 <div class="logo-wrapper">
 <div class="logo-container"
-    on:click="{ replay }">
+    on:click={ replay }
+    on:keyup={ replay }
+    role="button"
+    tabindex="0">
     {#if visible}
     <svg xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 287 158"

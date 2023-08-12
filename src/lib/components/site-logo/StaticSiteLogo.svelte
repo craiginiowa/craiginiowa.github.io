@@ -1,3 +1,7 @@
+<script>
+  import { base } from "$app/paths";
+</script>
+
 <div class="site-logo">
   <div class="billboard">
     <div class="skills-cloud">
@@ -5,7 +9,7 @@
       />assorted activities
     </div>
     <div class="craiginiowa-logo">
-      <img src="/img/craiginiowa.svg" />
+      <img src="{base}/img/craiginiowa.svg" alt="craiginiowa logo" />
     </div>
   </div>
 </div>

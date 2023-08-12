@@ -43,7 +43,7 @@ Stay tuned.
 
 
 
-### <a name="update"></a>Update
+### <a name="update" aria-label="Update"></a>Update
 
 <p class="post-meta">Aug 11, 2023</p>
 

@@ -1,9 +1,11 @@
 <script>
+  import { base } from '$app/paths';
+  
   export let url;
   export let text;
 </script>
 
-<a class="external-link" href={url} target="_blank">
+<a class="external-link" href={base + url} target="_blank">
   {text}
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.042 17.125">
     <g>

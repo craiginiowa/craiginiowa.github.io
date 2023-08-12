@@ -24,15 +24,6 @@
     grid-template-rows: repeat(9, 1fr);
   }
 
-  .one-to-one-aspect-ratio:after {
-    content: "";
-    display: inline-block;
-    height: 0;
-    padding-top: 100%;
-    position: relative;
-    width: 1px;
-  }
-
   .state {
     background-color: #f2f2f2;
   }

@@ -14,7 +14,7 @@ image:
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod consequat.
 
 <figure class="right-rail">
-    <img src="/img/prohm.jpg">
+    <img src="/img/prohm.jpg" alt="Coach Prohm">
     <figcaption>This is the caption for the mug of Steve Prohm. He is the coach of Iowa State men's basketball.</figcaption>
 </figure>
 
@@ -27,7 +27,7 @@ Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliqui
 
 ```html
 <figure class="right-rail">
-    <img src="{image.url}">
+    <img src="{image.url}" alt="{image.alt}">
     <figcaption>{image.caption}</figcaption>
 </figure>
 ```
@@ -35,7 +35,7 @@ Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliqui
 Sed do eiusmo tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod consequat.
 
 <figure class="right-rail">
-    <img src="{image.url}">
+    <img src="{image.url}" alt="Alt text">
     <figcaption>{image.caption}</figcaption>
 </figure>
 

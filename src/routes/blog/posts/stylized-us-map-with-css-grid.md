@@ -9,6 +9,7 @@ scripts: [examples/css-grid-map.js]
 ---
 
 <script>
+  import { base } from "$app/paths";
   import TiledMap from "../../../lib/components/TiledMap.svelte";
 </script>
 
@@ -17,7 +18,7 @@ One of the most common news graphics is a map of the U.S. displaying some metric
 From a usability standpoint, the problem with this is — not to get too technical, but — some states are very big and some states are very small. And very small states are difficult to label and hard to click or tap.
 
 <figure class="image">
-    <img src="/img/examples/usmap.jpg">
+    <img src="{base}/img/examples/usmap.jpg" alt="U.S. map">
 </figure>
 
 
@@ -30,7 +31,7 @@ _**Full disclosure:** You can find better blog posts about the whys of tile maps
 But I digress. A square-tile map is simple to do using nothing more than CSS grid. I've used it in a couple of places, most recently on [this page](https://www.usatoday.com/storytelling/distancedance/) promoting the #DistanceDance movement on social media and [this one](https://www.usatoday.com/storytelling/coronavirus-reopening-america-map/) tracking the status of states' coronavirus restrictions. They both look like this, more or less.
 
 <figure class="image">
-    <img src="/img/examples/distance-dance.jpg">
+    <img src="{base}/img/examples/distance-dance.jpg" alt="Distance Dance square-tile map">
 </figure>
 
 Each state is represented as a square tile, ordered to roughly appear where it would on a normal map. To help readers undersand what they're looking at, I added a silhouette of a standard U.S. map behind the tiles as a visual hint that this is indeed a map.

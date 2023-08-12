@@ -1,4 +1,5 @@
 <script>
+  import { base } from "$app/paths";
   import { onMount, tick } from "svelte";
   import { draw, fade } from "svelte/transition";
   import { quartOut } from "svelte/easing";
@@ -97,7 +98,7 @@
       {/if}
       <div class="craiginiowa-logo">
         {#if animate == "cloud"}
-          <img src="/img/craiginiowa.svg" />
+          <img src="{base}/img/craiginiowa.svg" alt="craiginiowa logo"/>
         {:else}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -224,9 +225,6 @@
     }
   }
   @media (min-width: 768px) {
-    .billboard-wrapper {
-      min-height: 131px;
-    }
     .craiginiowa-logo {
       width: 142px;
     }

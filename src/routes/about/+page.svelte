@@ -1,12 +1,13 @@
 <script>
+  import { base } from "$app/paths";
   import Billboard from "$lib/components/Billboard.svelte";
-  import ExternalLink from "$lib/components/ExternalLink.svelte";
+  // import ExternalLink from "$lib/components/ExternalLink.svelte";
 </script>
 
 <section class="page-content">
   <Billboard title="about me" />
 
-  <img class="biopic" src="/img/my-dumb-face.jpg" alt="My dumb face" />
+  <img class="biopic" src="{base}/img/my-dumb-face.jpg" alt="My dumb face" />
 
   <p class="dropcap">
     Here's the part where I tell you all about myself, and that's not something
@@ -59,8 +60,8 @@
   <h3>My old Kentucky home</h3>
   <p>
     The Herald-Leader was great in that I got to do a little bit of everything:
-    photo illustrations, <a href="/graphics/recycling-hl">news graphics</a>, 3D
-    renderings, <a href="/illustrations/animals">pencil sketches</a>. It's where
+    photo illustrations, <a href="{base}/graphics/recycling-hl">news graphics</a>, 3D
+    renderings, <a href="{base}/illustrations/animals">pencil sketches</a>. It's where
     I really cut my teeth on the trade.
   </p>
   <p>
@@ -80,8 +81,8 @@
     researching a project, and Scott, the 3D illustration guy. Scott left just a
     few months after I joined, which turned out to be fortunate for me, because
     it left open the role of 3D illustrator, which I gladly claimed. Check out
-    the <a href="/graphics">graphics</a> and
-    <a href="/illustrations">illustrations</a> pages samples of my 3D work.
+    the <a href="{base}/graphics">graphics</a> and
+    <a href="{base}/illustrations">illustrations</a> pages samples of my 3D work.
   </p>
   <h3>The digital frontier</h3>
   <p>
@@ -103,7 +104,7 @@
     scale projects of which I remain proud to this day: On the 50th anniversary
     of Buddy Holly's death near Clear Lake, Iowa, we published a project that
     made heavy use of Flash; and when a tornado decimated Parkersburg, Iowa, we <a
-      href="/developer/parkersburg-tornado">built a map</a
+      href="{base}/developer/parkersburg-tornado">built a map</a
     > that showed the extent of the destruction with before and after photos and
     survivors' testimony.
   </p>

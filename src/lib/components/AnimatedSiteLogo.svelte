@@ -43,7 +43,13 @@
 
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<div class="billboard" class:done bind:this={el} on:click={replay}>
+<div class="billboard"
+  class:done
+  bind:this={el}
+  on:click={replay}
+  on:keyup={replay}
+  role="button"
+  tabindex="0">
   {#if visible}
     <div class="animated-border" class:visible class:animate />
     <div

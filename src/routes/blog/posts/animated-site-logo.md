@@ -14,7 +14,6 @@ scripts: [examples/animated-site-logo/bundle.js]
   import RebuildingAmericaLogo from "../../../lib/components/site-logo/RebuildingAmericaLogo.svelte";
   import StaticSiteLogo from "../../../lib/components/site-logo/StaticSiteLogo.svelte";
   import SiteLogoExample from "../../../lib/components/site-logo/SiteLogoExample.svelte";
-  import AnimatedSiteLogo from "../../../lib/components/site-logo/AnimatedSiteLogo.svelte";
 </script>
 
 In May of 2020, I built an animated SVG logo for USA Today's Rebuilding America front, a landing place for stories about how America would rebuild as states began opening back up. The Svelte framework made it embarassingly easy.
