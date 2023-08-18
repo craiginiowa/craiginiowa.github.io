@@ -1,9 +1,27 @@
 <script>
   import { page } from "$app/stores";
   import { base } from "$app/paths";
+
+  export let scrollY;
+
+  let hide = false;
+  let lastScrollY;
+
+  // $: clipHeight = hide ? "0px" : "56px";
+
+  $: if (!hide && scrollY > lastScrollY) {
+    hide = true;
+    lastScrollY = scrollY;
+  } else if (hide && scrollY < lastScrollY) {
+    hide = false;
+    lastScrollY = scrollY;
+  } else {
+    lastScrollY = scrollY;
+  }
 </script>
 
-<header class="site-header">
+<header class="site-header" class:hide>
+  <div class="site-header-background"></div>
   <div class="site-header-wrapper">
     <label for="nav-trigger" class="menu-icon">
       <svg viewBox="0 0 18 15" width="18px" height="15px">
@@ -41,12 +59,12 @@
       </span>
       <a
         class="page-link"
-        class:active={$page.route.id == "/blog"}
+        class:active={$page.route.id.includes("blog")}
         href="{base}/blog">blog</a
       >
       <a
         class="page-link"
-        class:active={$page.route.id == "/about"}
+        class:active={$page.route.id.includes("about")}
         href="{base}/about">about</a
       >
     </nav>
@@ -60,10 +78,40 @@
   @use "../styles/colors" as *;
   @use "../styles/variables" as *;
 
+  $header-background-opacity: .85;
+
   .site-header {
-    position: relative;
+    position: fixed;
+    top: 0;
     width: 100vw;
     z-index: 2;
+  }
+
+  #toggle {
+    position: fixed;
+    top: 100px;
+    left: 100px;
+  }
+
+  :global(.site-header-background) {
+    background-color: $white-color;
+    clip-path: polygon(0 0, 100% 0, 100% 56px, 0 56px);
+    pointer-events: none;
+    position: fixed;
+    height: 100vh;
+    opacity: $header-background-opacity;  
+    transition: opacity .3s;
+    width: 100vw;
+    z-index: -1;
+
+    .hide & {
+      opacity: 0;
+    }
+  }
+
+  :global(.home .site-header-background) {
+      background-color: transparent;
+      background-image: $radial-red;
   }
 
   .site-header-wrapper {
@@ -71,12 +119,26 @@
     display: flex;
     font-size: 18px;
     height: 56px;
-    margin: 0 20px;
+    padding: 0 20px;
+    transform: translateY(0%);
+    transition: transform .3s;
+
+    .hide & {
+      transform: translateY(-100%);
+    }
 
     @media (min-width: 768px) {
       flex-direction: row-reverse;
       justify-content: space-between;
     }
+  }
+
+  .site-header:hover .site-header-wrapper {
+    transform: translate(0%);
+  }
+
+  .site-header:hover .site-header-background {
+    opacity: $header-background-opacity;
   }
 
   .menu-icon {
