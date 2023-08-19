@@ -78,6 +78,7 @@
   @use "../styles/colors" as *;
   @use "../styles/variables" as *;
 
+  $dropdown-text-color: rgba(0, 0, 0, .35);
   $header-background-opacity: .85;
 
   .site-header {
@@ -85,12 +86,6 @@
     top: 0;
     width: 100vw;
     z-index: 2;
-  }
-
-  #toggle {
-    position: fixed;
-    top: 100px;
-    left: 100px;
   }
 
   :global(.site-header-background) {
@@ -226,7 +221,7 @@
     font-weight: 700;
 
     span {
-      color: #acacac;
+      color: $dropdown-text-color;
     }
 
     :global(.home) & {
@@ -263,7 +258,7 @@
       }
 
       @media (min-width: 768px) {
-        color: #acacac;
+        color: $dropdown-text-color;
         cursor: pointer;
         margin-bottom: 0;
         padding-right: 6px;
@@ -308,12 +303,22 @@
         background-color: unset;
       }
 
+      /* Invisible block to maintain hover state */
+      &::before {
+        bottom: 100%;
+        content: "";
+        height: 20px;
+        position: absolute;
+        width: 100%;
+      }
+
       @media (min-width: 768px) {
-        background-color: $white-color;
+        background-color: rgba(255, 255, 255, $header-background-opacity);
         display: none;
         margin-left: -10px;
-        padding: 10px;
+        padding: 0 10px 10px;
         position: absolute;
+        top: 100%;
       }
     }
 
@@ -328,7 +333,7 @@
   }
 
   .page-link {
-    color: #acacac;
+    color: $dropdown-text-color;
     display: block;
     margin-bottom: 15px;
 
