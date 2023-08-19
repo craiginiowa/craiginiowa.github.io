@@ -5,7 +5,6 @@
 </script>
 
 <section class="page-content">
-  <p><a href="/developer/projects/my-project">My Project</a></p>
   <Billboard title="developer" />
   <CollectionThumbs collection={data.developer} path="/developer/" />
 </section>
