@@ -3,7 +3,7 @@
   export let data;
 </script>
 
-<div class="page-content illustrations">
+<div class="page-content portfolio">
   <section class="column content">
     {#each data.images as image}
       <img class="illustrations-image" src="{base}/img/{image}" alt={data.title} />

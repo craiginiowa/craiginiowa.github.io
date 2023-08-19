@@ -5,6 +5,7 @@
   import "$lib/styles/style.scss";
 
   let main;
+  let scrollY;
 
   $: if (browser) {
     if ($page.route.id == "/") {
@@ -17,9 +18,9 @@
   }
 </script>
 
-<Header />
+<Header {scrollY} />
 
-<main class="page-wrapper" bind:this={main}>
+<main class="page-wrapper" bind:this={main} on:scroll={() => scrollY = main.scrollTop}>
   {#if $page.route.id == "/"}
     <section class="animated-background" />
   {/if}
@@ -84,16 +85,11 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    height: calc(100% - 56px);
+    height: 100%;
     justify-content: space-between;
     overflow-y: auto;
-    padding: 30px 20px 0;
     position: relative;
     width: 100%;
     z-index: 1;
-
-    @media (min-width: 480px) {
-      padding-top: 50px;
-    }
   }
 </style>

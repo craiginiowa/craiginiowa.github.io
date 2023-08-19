@@ -17,3 +17,5 @@ $gray-color-dark: darken($gray-color, 25%);
 
 $red-color-dark: #440000;
 $red-color-light: #aa0000;
+
+$radial-red: radial-gradient($red-color-light, $red-color-dark);
