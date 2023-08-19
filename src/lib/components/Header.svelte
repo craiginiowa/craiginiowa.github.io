@@ -7,6 +7,8 @@
   let hide = false;
   let lastScrollY;
 
+  $: console.log($page.route.id);
+
   // $: clipHeight = hide ? "0px" : "56px";
 
   $: if (!hide && scrollY > lastScrollY) {
