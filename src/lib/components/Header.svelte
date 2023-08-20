@@ -1,29 +1,32 @@
 <script>
+  import { browser } from "$app/environment";
+  import { afterNavigate } from "$app/navigation";
   import { page } from "$app/stores";
   import { base } from "$app/paths";
 
   export let scrollY;
 
+  $: isHoverableDevice =
+    browser && window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
   let hide = false;
   let lastScrollY;
+  let navInput;
 
-  $: console.log($page.route.id);
-
-  // $: clipHeight = hide ? "0px" : "56px";
-
-  $: if (!hide && scrollY > lastScrollY) {
-    hide = true;
-    lastScrollY = scrollY;
-  } else if (hide && scrollY < lastScrollY) {
-    hide = false;
-    lastScrollY = scrollY;
-  } else {
+  $: if (isHoverableDevice) {
+    if (!hide && scrollY > lastScrollY) {
+      hide = true;
+    } else if (hide && scrollY < lastScrollY) {
+      hide = false;
+    }
     lastScrollY = scrollY;
   }
+
+  afterNavigate(() => navInput.checked = false);
 </script>
 
 <header class="site-header" class:hide>
-  <div class="site-header-background"></div>
+  <div class="site-header-background" />
   <div class="site-header-wrapper">
     <label for="nav-trigger" class="menu-icon">
       <svg viewBox="0 0 18 15" width="18px" height="15px">
@@ -32,7 +35,7 @@
         />
       </svg>
     </label>
-    <input id="nav-trigger" type="checkbox" />
+    <input id="nav-trigger" type="checkbox" bind:this={navInput} />
     <nav class="site-nav">
       <div class="site-logo-text">craig<span>in</span>iowa</div>
       {#if $page.route.id != "/"}
@@ -80,8 +83,8 @@
   @use "../styles/colors" as *;
   @use "../styles/variables" as *;
 
-  $dropdown-text-color: rgba(0, 0, 0, .35);
-  $header-background-opacity: .85;
+  $dropdown-text-color: rgba(0, 0, 0, 0.35);
+  $header-background-opacity: 0.85;
 
   .site-header {
     position: fixed;
@@ -96,8 +99,8 @@
     pointer-events: none;
     position: fixed;
     height: 100vh;
-    opacity: $header-background-opacity;  
-    transition: opacity .3s;
+    opacity: $header-background-opacity;
+    transition: opacity 0.3s;
     width: 100vw;
     z-index: -1;
 
@@ -107,8 +110,8 @@
   }
 
   :global(.home .site-header-background) {
-      background-color: transparent;
-      background-image: $radial-red;
+    background-color: transparent;
+    background-image: $radial-red;
   }
 
   .site-header-wrapper {
@@ -118,7 +121,7 @@
     height: 56px;
     padding: 0 20px;
     transform: translateY(0%);
-    transition: transform .3s;
+    transition: transform 0.3s;
 
     .hide & {
       transform: translateY(-100%);
