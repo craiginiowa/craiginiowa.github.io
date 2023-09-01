@@ -1,12 +1,18 @@
 <script>
   import { browser } from "$app/environment";
   import { page } from "$app/stores";
+  import { onMount, onDestroy } from "svelte";
 
-  $: if (browser) {
-    if ($page.route.id.includes("/projects")) {
+  onMount(() => {
+    if (browser) {
       document.body.classList.add("projects");
-    } else document.body.classList.remove("projects");
-  }
+    }
+  });
+  onDestroy(() => {
+    if (browser) {
+      document.body.classList.remove("projects");
+    }
+  });
 </script>
 
 <section class="app-content">
