@@ -522,17 +522,6 @@
   ],
   "posts": [
     {
-      "title": "I'm bored. Let's build a Wordle clone.",
-      "slug": "wordle-clone",
-      "author": "Craig Johnosn",
-      "date": "2023-08-25 10:09:00 -0600",
-      "categories": "dev",
-      "pinned": false,
-      "excerpt": "The new job is going fine, but I miss working in javascript daily. So let&#39;s do something for fun.",
-      "path": "/blog/wordle-clone",
-      "draft": true
-    },
-    {
       "title": "Hey there! Long time no blog",
       "date": "2022-11-23 15:00:00 -0600",
       "categories": [
@@ -590,33 +579,6 @@
       "excerpt": "I guess I should kick off my initial blog post with &quot;Hi, Mom!&quot;",
       "path": "/blog/lets-get-it-started",
       "draft": false
-    },
-    {
-      "title": "Lorem ipsum dolor sit amet",
-      "slug": "lorem-ipsum-dolor",
-      "author": "Craig Johnosn",
-      "date": "2019-03-19 15:04:00 -0600",
-      "categories": "dev",
-      "pinned": false,
-      "image": {
-        "url": "/img/cyclones-mbb-four.jpg",
-        "caption": "This is the caption for the picture of THT, Shayock, Weiler-Babb, Haliburton and Jacobsen.",
-        "credit": "photo credit"
-      },
-      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod consequat.",
-      "path": "/blog/lorem-ipsum",
-      "draft": true
-    },
-    {
-      "title": "This post demonstrates post content styles",
-      "slug": "post-content-styles",
-      "categories": "junk",
-      "author": "Bart Simpson",
-      "meta": "Springfield",
-      "pinned": false,
-      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.",
-      "path": "/blog/this-post-demonstrates-post-content-styles",
-      "draft": true
     }
   ]
 }
