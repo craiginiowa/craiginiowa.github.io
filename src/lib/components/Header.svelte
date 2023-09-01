@@ -48,30 +48,25 @@
           <a
             class="page-link"
             class:active={$page.route.id.includes("developer")}
-            href="{base}/developer">developer</a
-          >
+            href="{base}/developer">developer</a>
           <a
             class="page-link"
             class:active={$page.route.id.includes("graphics")}
-            href="{base}/graphics">graphics</a
-          >
+            href="{base}/graphics">graphics</a>
           <a
             class="page-link"
             class:active={$page.route.id.includes("illustrations")}
-            href="{base}/illustrations">illustrations</a
-          >
+            href="{base}/illustrations">illustrations</a>
         </div>
       </span>
       <a
         class="page-link"
         class:active={$page.route.id.includes("blog")}
-        href="{base}/blog">blog</a
-      >
+        href="{base}/blog">blog</a>
       <a
         class="page-link"
         class:active={$page.route.id.includes("about")}
-        href="{base}/about">about</a
-      >
+        href="{base}/about">about</a>
     </nav>
     <a class="site-name" rel="author" href="{base}/">
       <div class="site-logo-text">craig<span>in</span>iowa</div>

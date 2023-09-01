@@ -8,6 +8,12 @@
 /* Font faces */
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i&display=swap');
 
+@font-face {
+  font-family: AlfaSlabOne;
+  src: url("/fonts/AlfaSlabOne-Regular.ttf");
+}
+
+
 /* Reset some basic elements */
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
@@ -40,10 +46,9 @@ main {
 
 /* Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
+p, blockquote, pre, dl, figure,
 %vertical-rhythm {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
 }
 
 header {
@@ -51,8 +56,13 @@ header {
 }
 
 ul, ol {
-  @include relative-font-size(0.8375);
+  font-size: 1.1rem;
   list-style: none;
+  padding-left: 1.3rem;
+
+  li {
+    margin-bottom: .25rem;
+  }
 }
 
 a {
@@ -71,9 +81,6 @@ a {
 
 pre,
 code {
-  border: 1px solid $gray-color-light;
-  border-radius: 3px;
-  background-color: #eef;
   font-family: Menlo, Monaco, monospace;
   font-size: 15px;
 }
@@ -83,6 +90,9 @@ code {
 }
 
 pre {
+  background-color: #eef;
+  border: 1px solid $gray-color-light;
+  border-radius: 3px;
   padding: 8px 12px;
   overflow-x: auto;
 
