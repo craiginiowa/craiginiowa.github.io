@@ -522,6 +522,17 @@
   ],
   "posts": [
     {
+      "title": "I'm bored. Let's build a Wordle clone.",
+      "slug": "wordle-clone",
+      "author": "Craig Johnosn",
+      "date": "2023-08-25 10:09:00 -0600",
+      "categories": "dev",
+      "pinned": false,
+      "excerpt": "The new job is going fine, but I miss working in javascript daily. So let&#39;s do something for fun.",
+      "path": "/blog/wordle-clone",
+      "draft": false
+    },
+    {
       "title": "Hey there! Long time no blog",
       "date": "2022-11-23 15:00:00 -0600",
       "categories": [
@@ -538,7 +549,7 @@
       "slug": "animated-site-logo",
       "author": "Craig Johnson",
       "date": "2020-10-18 01:50:00 -0600",
-      "pinned": true,
+      "pinned": false,
       "image": null,
       "url": "/img/examples/rebuilding-america-front.jpg",
       "links": [
