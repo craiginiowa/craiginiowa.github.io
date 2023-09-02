@@ -253,7 +253,7 @@ Clicking the "Play" button should now show "Wordle component" and "Header compon
 
 I won't go into detail on this, but basically it should be anchored at the top of the `Wordle` components, should contain buttons that set the store variable to `true`, and should disable the buttons when any of the three modals is visible. For purposes of finishing out the scaffolded project, I'll also add close buttons to the skeleton modal views that set the store variables to `false`.
 
-Go [here](/developer/projects/wordle-clone/part-one) to see our progress to this point.
+Go [here](/developer/projects/wordle-clone/part-one) to see our progress to this point. Download the zipped project [here](/projects/wordle-clone.zip).
 
 For part two, I'll tackle the game play. Check back in a week or two.
 
