@@ -140,8 +140,8 @@ We now have all the components we'll need defined and imported, but we want to s
 </script>
 
 <div class="welcome-view">
-  <h1>Wordle</h1>
-  <p>Get 6 chances to guess a 5-letter word.</p>
+  <h1>Wordle-ish</h1>
+  <p>A simple Wordle clone built as a learning exercise. For the real thing, go to <a href="https://www.nytimes.com/games/wordle/index.html">nytimes.com/wordle</a></p>
   <div class="buttons">
     <button class="play">Play</button>
     <button>How to play</button>

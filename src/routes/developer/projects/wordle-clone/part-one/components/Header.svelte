@@ -6,7 +6,7 @@
 
 <div class="header">
   <div class="nothing-to-see-here" />
-  <h1>Wordle</h1>
+  <h1>Wordle-ish</h1>
   <div class="header-buttons">
     <button
       class="header-btn"
