@@ -122,7 +122,7 @@
       transform: translateY(-100%);
     }
 
-    @media (min-width: 768px) {
+    @media (hover: hover) {
       flex-direction: row-reverse;
       justify-content: space-between;
     }
@@ -150,7 +150,7 @@
       }
     }
 
-    @media (min-width: 768px) {
+    @media (hover: hover) {
       display: none;
     }
   }
@@ -182,7 +182,7 @@
       }
     }
 
-    @media (min-width: 768px) {
+    @media (hover: hover) {
       display: none;
     }
   }
@@ -199,7 +199,7 @@
     transition: left 0.3s;
     width: 250px;
 
-    @media (min-width: 768px) {
+    @media (hover: hover) {
       background-color: transparent;
       position: static;
       height: initial;
@@ -232,7 +232,7 @@
       }
     }
 
-    @media (min-width: 768px) {
+    @media (hover: hover) {
       .site-nav & {
         display: none;
       }
@@ -257,7 +257,7 @@
         display: none;
       }
 
-      @media (min-width: 768px) {
+      @media (hover: hover) {
         color: $dropdown-text-color;
         cursor: pointer;
         margin-bottom: 0;
@@ -312,7 +312,7 @@
         width: 100%;
       }
 
-      @media (min-width: 768px) {
+      @media (hover: hover) {
         background-color: rgba(255, 255, 255, $header-background-opacity);
         display: none;
         margin-left: -10px;
@@ -322,7 +322,7 @@
       }
     }
 
-    @media (min-width: 768px) {
+    @media (hover: hover) {
       display: inline-block;
       margin-left: 30px;
     }
@@ -341,7 +341,7 @@
       color: $text-color;
     }
 
-    @media (min-width: 768px) {
+    @media (hover: hover) {
       display: inline;
       margin-left: 30px;
       transition: color 0.2s;

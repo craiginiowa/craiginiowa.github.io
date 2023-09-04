@@ -81,7 +81,7 @@
   }
 
   .header > * {
-    width: 30vw;
+    width: 44vw;
   }
 
   .nothing-to-see-here {
@@ -94,6 +94,7 @@
 
   h1 {
     font-family: AlfaSlabOne, serif;
+    font-size: 1.5rem;
     line-height: 1;
     margin: 0;
     position: relative;
