@@ -522,6 +522,17 @@
   ],
   "posts": [
     {
+      "title": "Let's build a Wordle clone, Part Two",
+      "slug": "wordle-clone-part-two",
+      "author": "Craig Johnosn",
+      "date": "2023-09-14 10:09:00 -0600",
+      "categories": "dev",
+      "pinned": false,
+      "excerpt": "In part one of building a Wordle clone for fun, we got the general structure of our Svelte app in place. You can see the results of that work here.",
+      "path": "/blog/wordle-clone-part-two",
+      "draft": false
+    },
+    {
       "title": "I'm bored. Let's build a Wordle clone.",
       "slug": "wordle-clone",
       "author": "Craig Johnosn",
@@ -540,7 +551,7 @@
       ],
       "tags": [],
       "pinned": false,
-      "excerpt": "<em>&quot;I&#39;m hoping the inclusion of a blog will get me to work on it a bit more.&quot;</em>",
+      "excerpt": "&quot;I&#39;m hoping the inclusion of a blog will get me to work on it a bit more.&quot;",
       "path": "/blog/long-time-no-blog",
       "draft": false
     },

@@ -1,4 +1,5 @@
 <script>
+  import { afterNavigate } from "$app/navigation";
   import { onDestroy } from "svelte";
   import Welcome from "./components/Welcome.svelte";
   import Wordle from "./components/Wordle.svelte";
@@ -8,6 +9,12 @@
     showStatistics,
     showSettings,
   } from "./components/store";
+
+  let slug = "wordle-clone";
+  
+    afterNavigate(navigation => {
+      slug = navigation?.from?.params?.slug || "wordle-clone";
+    });
 
   onDestroy(() => {
     $showWelcome = true;
@@ -21,7 +28,7 @@
   {#if $showWelcome}
     <Welcome />
   {:else}
-    <Wordle />
+    <Wordle {slug} />
   {/if}
 </div>
 
