@@ -57,6 +57,9 @@ async function readMarkdownFiles(dirpath, relpath, pullExcerpt = false) {
             headerIds: false,
           });
           data.excerpt = html.match(/<p>(.*)<\/p>/)[1];
+          // Remove html
+          data.excerpt = data.excerpt.replace(/<[^>]+>/g, "");
+
         }
 
         const item = {

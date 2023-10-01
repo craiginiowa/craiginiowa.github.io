@@ -8,6 +8,9 @@
     showStatistics,
     showSettings
   } from "./store";
+
+  export let slug = "wordle-clone";
+
 </script>
 
 <Header />
@@ -21,7 +24,7 @@
 {/if}
 
 <div class="back-to-blog">
-  <a href="/blog/wordle-clone">&larr; Back to blog</a>
+  <a href="/blog/{slug}">&larr; Back to blog</a>
 </div>
 
 <style>

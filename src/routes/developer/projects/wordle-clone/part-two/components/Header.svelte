@@ -1,16 +1,17 @@
 <script>
-  import { showHowToPlay, showStatistics, showSettings } from "./store";
+  export let slug = "";
 
-  $: disabled = $showHowToPlay || $showStatistics || $showSettings;
+  $: disabled = true;
 </script>
 
 <div class="header">
-  <div class="nothing-to-see-here" />
+  <div class="nothing-to-see-here">
+    <a href="/blog/{slug}">&larr; Back to blog</a>
+  </div>
   <h1>Wordle-ish</h1>
   <div class="header-buttons">
     <button
       class="header-btn"
-      on:click={() => ($showHowToPlay = true)}
       {disabled}
     >
       <svg
@@ -27,7 +28,6 @@
     </button>
     <button
       class="header-btn"
-      on:click={() => ($showStatistics = true)}
       {disabled}
     >
       <svg
@@ -46,7 +46,6 @@
     </button>
     <button
       class="header-btn"
-      on:click={() => ($showSettings = true)}
       {disabled}
     >
       <svg
@@ -111,7 +110,6 @@
   .header-btn {
     background: none;
     border: none;
-    cursor: pointer;
 
     &[disabled] {
       opacity: 0.35;
