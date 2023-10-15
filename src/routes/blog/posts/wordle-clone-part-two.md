@@ -440,6 +440,8 @@ function handleKeyInput(key) {
 
 ```
 
+Hang on a moment. When we make a guess, hit the Enter key, nothing happens. Where's all that feedback we put in? Well, let's look at our Enter key handler. It's incrementing `curGuess`, but it's not calling our feedback functions. Actually, the guess will update, but only after we start typing the next answer. The problem is we don't have anything reactive in the DOM to trigger those functions. Luckily, Svelte makes the solution simple. Svelte has a special `{#key expression}` block that destroys and recreates its contents whenever the expression changes. We want our guesses and keyboard to update when `curGuess` changes, so we'll wrap the top-level `{#each}` blocks on our "guesses" and "keyboard" divs with `{#key curGuess}` ... `{/key}`. The feedback now updates when we hit Enter.
+
 ## Conclusion
 
 We covered a lot of ground here. We have a more or less [playable Wordle clone](/developer/projects/wordle-clone/part-two). (Download the zipped project [here](/projects/wordle-clone-part-two.zip).) The most obvious thing we're missing is a means of setting a new answer everyday. We'll tackle that in in Part Three, along with:
