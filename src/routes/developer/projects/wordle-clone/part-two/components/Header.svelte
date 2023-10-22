@@ -70,6 +70,7 @@
     border-bottom: 1px solid lightgray;
     box-sizing: border-box;
     display: flex;
+    height: 51px;
     justify-content: space-between;
     padding: 0.5rem 1rem;
     width: 100vw;

@@ -15,8 +15,8 @@
 
 <style>
   .wordle-clone {
-    height: calc(100vh - 56px);
+    height: 100%;
     position: relative;
-    width: 100vw;
+    width: 100%;
   }
 </style>
