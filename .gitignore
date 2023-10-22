@@ -8,6 +8,3 @@ NOTES-FOR-ME.txt
 
 # Svelte app template
 src/routes/developer/projects/svelte-app/
-
-# Node
-package-lock.json
