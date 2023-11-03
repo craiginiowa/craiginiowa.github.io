@@ -31,9 +31,9 @@ body {
   font-size: #{$base-font-size};
   line-height: #{$base-line-height};
   font-weight: $base-font-weight;
-  height: 100vh;
+  height: 100%;
   position: relative;
-  width: 100vw;
+  width: 100%;
 
   &.home {
     color: $white-color;
