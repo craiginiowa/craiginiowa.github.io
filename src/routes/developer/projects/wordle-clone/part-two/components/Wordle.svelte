@@ -150,12 +150,17 @@
     }
   }
 
-  /**
+   /**
    * Resize guesses grid to fit the vertical space left
    * after subtracting the keyboard height, maintaining
    * an aspect ratio of 5:6 for the grid.
    */
+
+   const GLOBAL_HEADER_HEIGHT = 56;
+
   function resize() {
+    const appContent = gameplayEl.closest(".app-content");
+    appContent.style.setProperty("height", `${window.innerHeight - GLOBAL_HEADER_HEIGHT}px`);
     const w = (gameplayEl.clientHeight - keyboardEl.clientHeight) * (5 / 6);
     const guessesWidth = Math.min(gameplayEl.clientWidth, 350, w);
     guessesEl.style.width = `${guessesWidth}px`;
@@ -269,6 +274,10 @@
     font-size: 1.85rem;
     font-weight: 700;
     justify-content: center;
+
+    @media (max-width: 350px) {
+      font-size: 1.45rem;
+    }
   }
 
   /* KEYBOARD */
@@ -286,11 +295,13 @@
     background-color: lightgray;
     border: none;
     border-radius: 4px;
+    color: #2c2c2c;
     flex: 1;
     font-size: 1.15rem;
     font-weight: 700;
     height: 58px;
     margin-right: 6px;
+    padding: 0;
 
     &.enter,
     &.delete {
@@ -304,6 +315,10 @@
     @media (min-width: 480px) {
       font-size: 1.25rem;
       margin-right: 8px;
+    }
+
+    @media (max-width: 350px) {
+      height: 52px;
     }
   }
   .spacer {

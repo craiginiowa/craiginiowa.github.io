@@ -7,7 +7,7 @@
   export let scrollY;
 
   $: isHoverableDevice =
-    browser && window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+    browser && window.matchMedia("(min-width: 768px) and (pointer: fine)").matches;
 
   let hide = false;
   let lastScrollY;
@@ -47,25 +47,25 @@
         <div>
           <a
             class="page-link"
-            class:active={$page.route.id.includes("developer")}
+            class:active={$page?.route.id.includes("developer")}
             href="{base}/developer">developer</a>
           <a
             class="page-link"
-            class:active={$page.route.id.includes("graphics")}
+            class:active={$page?.route.id.includes("graphics")}
             href="{base}/graphics">graphics</a>
           <a
             class="page-link"
-            class:active={$page.route.id.includes("illustrations")}
+            class:active={$page?.route.id.includes("illustrations")}
             href="{base}/illustrations">illustrations</a>
         </div>
       </span>
       <a
         class="page-link"
-        class:active={$page.route.id.includes("blog")}
+        class:active={$page?.route.id.includes("blog")}
         href="{base}/blog">blog</a>
       <a
         class="page-link"
-        class:active={$page.route.id.includes("about")}
+        class:active={$page?.route.id.includes("about")}
         href="{base}/about">about</a>
     </nav>
     <a class="site-name" rel="author" href="{base}/">
@@ -122,7 +122,7 @@
       transform: translateY(-100%);
     }
 
-    @media (hover: hover) {
+    @media (min-width: 768px) {
       flex-direction: row-reverse;
       justify-content: space-between;
     }
@@ -150,7 +150,7 @@
       }
     }
 
-    @media (hover: hover) {
+    @media (min-width: 768px) {
       display: none;
     }
   }
@@ -182,7 +182,7 @@
       }
     }
 
-    @media (hover: hover) {
+    @media (min-width: 768px) {
       display: none;
     }
   }
@@ -199,7 +199,7 @@
     transition: left 0.3s;
     width: 250px;
 
-    @media (hover: hover) {
+    @media (min-width: 768px) {
       background-color: transparent;
       position: static;
       height: initial;
@@ -232,7 +232,7 @@
       }
     }
 
-    @media (hover: hover) {
+    @media (min-width: 768px) {
       .site-nav & {
         display: none;
       }
@@ -257,7 +257,7 @@
         display: none;
       }
 
-      @media (hover: hover) {
+      @media (min-width: 768px) {
         color: $dropdown-text-color;
         cursor: pointer;
         margin-bottom: 0;
@@ -312,7 +312,7 @@
         width: 100%;
       }
 
-      @media (hover: hover) {
+      @media (min-width: 768px) {
         background-color: rgba(255, 255, 255, $header-background-opacity);
         display: none;
         margin-left: -10px;
@@ -322,7 +322,7 @@
       }
     }
 
-    @media (hover: hover) {
+    @media (min-width: 768px) {
       display: inline-block;
       margin-left: 30px;
     }
@@ -341,7 +341,7 @@
       color: $text-color;
     }
 
-    @media (hover: hover) {
+    @media (min-width: 768px) {
       display: inline;
       margin-left: 30px;
       transition: color 0.2s;
