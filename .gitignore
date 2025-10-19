@@ -1,3 +1,9 @@
+# Mac files
+.DS_Store
+
+# Node
+node_modules/
+
 # Sveltekit ignores
 .svelte-kit/
 build/

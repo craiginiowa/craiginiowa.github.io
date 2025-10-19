@@ -23,7 +23,7 @@
       <TestComponent />
     </div> -->
 
-  {#if pinned}
+  <!--{#if pinned}
     <div class="post preview">
       <div class="post-kicker">PINNED BLOG POST</div>
       <h6 class="timestamp">
@@ -50,6 +50,7 @@
       <a class="read-more right-caret" href={base + latest.path}>READ MORE</a>
     </div>
   {/if}
+  -->
 
   <CollectionThumbs
     collection={data.developer}

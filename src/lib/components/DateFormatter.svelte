@@ -6,12 +6,13 @@
     date = new Date(date);
   }
 
-  // date: 2020-10-18 01:50:00 -0600
+  // date: 2020-10-18T01:50:00-0600
 
   function dateonly() {
     return date
       .toDateString()
       .replace(/^\w* /, "")
+      .replace(/(^\w+) 0(\d)/, "$1 $2")
       .replace(/ (\d{4})/, ", $1");
   }
   function datetime() {

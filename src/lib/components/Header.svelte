@@ -59,10 +59,10 @@
             href="{base}/illustrations">illustrations</a>
         </div>
       </span>
-      <a
+      <!-- <a
         class="page-link"
         class:active={$page?.route.id.includes("blog")}
-        href="{base}/blog">blog</a>
+        href="{base}/blog">blog</a> -->
       <a
         class="page-link"
         class:active={$page?.route.id.includes("about")}
